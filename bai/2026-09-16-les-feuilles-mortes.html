@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les feuilles mortes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>16/09/2026</span><span>Pháp · 1945</span><span>Livia Blanc</span></div>
+
+  <h1>Les feuilles mortes</h1>
+  <p class="dek">Một bài hát không được ký tên, rồi vòng qua nước Mỹ, đổi hẳn lời, và trở thành một trong những chuẩn mực jazz được chơi nhiều nhất thế kỷ 20.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/BHhVw_tRwC0" title="Les feuilles mortes — Livia Blanc"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=BHhVw_tRwC0" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc: Joseph Kosma · Lời: Jacques Prévert · Bản bạn đã thích: Livia Blanc, EP <i>French Classics</i></p>
+
+  <h2>Câu chuyện</h2>
+  <p>Cuối năm 1945, Paris vừa ra khỏi năm năm bị Đức chiếm đóng. Trong một căn phòng nhỏ, một người đàn ông gốc Hungary tên Joseph Kosma ngồi viết nhạc cho một vở ballet. Ông không được phép ký tên mình lên bất cứ bản nhạc nào, vì ông là người Do Thái.</p>
+  <p>Suốt những năm Pháp bị chiếm đóng, ông phải mượn những cái tên khác — Georges Mouqué, rồi Jean Marion — để giai điệu của mình được cất lên mà không ai truy hỏi. Người đứng ra che chắn cho ông là một nhà thơ, bạn thân của ông, tên Jacques Prévert. Hai người đã cùng viết gần tám mươi bài hát như vậy.</p>
+  <p>Giai điệu Kosma viết cho vở ballet <i>Le Rendez-vous</i> của biên đạo Roland Petit về sau trở thành một trong những giai điệu được hát nhiều nhất thế kỷ. Prévert đặt lời cho nó, và đặt tên nó là <i>Les feuilles mortes</i> — những chiếc lá đã chết.</p>
+  <p>Năm 1946, đạo diễn Marcel Carné dựng phim <i>Les Portes de la nuit</i>, mời đúng cặp Kosma và Prévert viết nhạc mở đầu. Trong phim, một diễn viên trẻ tên Yves Montand khe khẽ hát nó. Ba năm sau, khi Montand thu bài này thành đĩa riêng, nó bán được khoảng một triệu bản chỉ trong năm năm — con số hiếm có với một bài hát tiếng Pháp thời đó.</p>
+  <p>Nhưng câu chuyện rẽ hướng vào năm 1950, khi một người Mỹ tên Johnny Mercer ngồi viết lời tiếng Anh cho giai điệu này. Ông không dịch. Ông viết một bài hát khác hẳn, chỉ giữ lại nhạc. Bản gốc tiếng Pháp là lời của một người nhìn lại cuộc tình đã hết, chấp nhận rằng đời sống cứ lặng lẽ chia lìa những kẻ yêu nhau. Bản tiếng Anh, <i>Autumn Leaves</i>, nhẹ hơn, nói về những chiếc lá vàng rơi ngoài cửa sổ, gợi lại một mùa hè và một nụ hôn đã qua. Cùng một giai điệu, nhưng người Pháp nghe một câu chuyện, người Mỹ nghe một câu chuyện khác.</p>
+  <p>Rồi <i>Autumn Leaves</i> tách hẳn khỏi cái bóng của bản gốc, trở thành một trong những bản nhạc jazz được thu âm nhiều nhất lịch sử. Nat King Cole hát nó năm 1955. Nhưng bản được nhắc tới nhiều nhất có lẽ là của Miles Davis, chơi cùng Cannonball Adderley trong album <i>Somethin' Else</i> năm 1958.</p>
+  <p>Bản bạn đang nghe là của Livia Blanc, nằm trong EP <i>French Classics</i>. Cách hát ấy giữ nguyên cái chậm rãi ban đầu, như thể bài hát đang quay về đúng nơi nó xuất phát, trước khi rẽ sang thành chuẩn mực jazz Mỹ.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> bài hát nổi tiếng khắp thế giới này ra đời từ một người không được phép ký tên mình lên nó.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <div class="lyric">
+    <b>"C'est une chanson qui nous ressemble / Toi tu m'aimais et je t'aimais"</b>
+    <i>"Đây là bài hát giống như chúng mình / Em từng yêu anh và anh từng yêu em."<br>Chỉ trong một câu, thì của động từ đổi ngay từ hiện tại sang quá khứ. Tình yêu đã lùi hẳn về phía sau, còn bài hát thì vẫn đang được hát ở thì hiện tại.</i>
+  </div>
+
+  <div class="lyric">
+    <b>"La vie sépare ceux qui s'aiment / Tout doucement, sans faire de bruit"</b>
+    <i>"Đời sống chia lìa những người yêu nhau / Rất khẽ khàng, không một tiếng động."<br>Không có phản bội, không cãi vã. Chỉ có "cuộc đời" như một nhân vật vô hình, lặng lẽ tách hai người ra, đúng như cách một chiếc lá rụng xuống mà chẳng ai nghe thấy.</i>
+  </div>
+
+  <div class="lyric">
+    <b>"Et la mer efface sur le sable / Les pas des amants désunis"</b>
+    <i>"Và biển xoá trên cát / Dấu chân những người tình đã chia xa."<br>Hình ảnh khép lại bài hát: biển không giữ lại gì, kể cả bằng chứng cuối cùng rằng hai người từng đứng cạnh nhau.</i>
+  </div>
+
+  <p class="credit">Nghe trọn lời: <a href="https://www.paroles.net/yves-montand/paroles-les-feuilles-mortes">bản lời đầy đủ trên Paroles.net</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Kosma phải viết dưới các bút danh Georges Mouqué và Jean Marion suốt thời nước Pháp bị chiếm đóng.</li>
+    <li>Bản thu của Yves Montand năm 1949 bán được khoảng một triệu bản trong năm năm.</li>
+    <li>Lời tiếng Anh của Johnny Mercer (1950) không phải bản dịch, mà là một bài hát khác hẳn, chỉ giữ nguyên giai điệu.</li>
+    <li>Đoạn solo trumpet của Miles Davis trong <i>Autumn Leaves</i> (album <i>Somethin' Else</i>, 1958) vẫn được xem là một trong những đoạn solo jazz kinh điển nhất.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://www.iemj.org/en/kosma-joseph-1905-1969/">Institut Européen des Musiques Juives — Joseph Kosma</a> ·
+    <a href="https://en.wikipedia.org/wiki/Joseph_Kosma">Wikipedia — Joseph Kosma</a> ·
+    <a href="https://en.wikipedia.org/wiki/Autumn_Leaves_(1945_song)">Wikipedia — Autumn Leaves (1945 song)</a> ·
+    <a href="https://www.udiscovermusic.com/stories/rediscover-cannonball-adderley-somethin-else/">uDiscoverMusic — Somethin' Else</a>
+  </p>
+</div>
+</body>
+</html>
