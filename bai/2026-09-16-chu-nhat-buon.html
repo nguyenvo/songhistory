@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chủ Nhật Buồn</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>16/09/2026</span><span>Bài số 581 trong danh sách của bạn</span><span>Nhạc Hungary · lời Việt</span></div>
+
+  <h1>Chủ Nhật Buồn</h1>
+  <p class="dek">Một người Hungary ngồi trong căn phòng thuê ở Paris năm 1933, viết một giai điệu mà chính nhà xuất bản cũng sợ không dám in.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/Ie7escd1p40" title="Chủ Nhật Buồn — Khánh Ly"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=Ie7escd1p40" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc: Rezső Seress · Lời Việt: Phạm Duy · Bản bạn đã thích: Khánh Ly, album <i>Bên Ni Bên Nớ</i></p>
+
+  <h2>Câu chuyện</h2>
+  <p>Rezső Seress là một nhạc sĩ dương cầm Hungary sống lay lắt ở Paris. Ông chơi đàn trong các quán ăn, và mơ sống được bằng nghề viết nhạc. Cuối năm 1932, ông viết một bản nhạc mà ông đặt tên là <i>Vége a világnak</i> — "Thế giới đang tận".</p>
+  <p>Lời đầu tiên của bài hát không phải chuyện tình. Đó là bài về chiến tranh, về sự tàn phá, và khép lại bằng một lời cầu nguyện khẽ khàng cho tội lỗi của loài người. Châu Âu lúc đó đang trượt dần về phía một cuộc chiến nữa, và Seress viết đúng cái không khí ông đang hít thở.</p>
+  <p>Ông mang bài hát đi chào các nhà xuất bản. Họ từ chối. Một người trong số đó để lại câu nhận xét mà về sau trở nên nổi tiếng: bài hát mang trong nó "một nỗi tuyệt vọng khủng khiếp có sức cuốn theo", và ông ta sợ nó có thể làm hại người nghe.</p>
+  <p>Rồi một nhà thơ tên László Jávor viết lời khác cho giai điệu ấy. Jávor vừa chia tay người yêu. Ông đổi tên bài thành <i>Szomorú vasárnap</i> — "Chủ nhật buồn" — và biến nó thành lời của một người muốn chết theo người mình yêu, hẹn gặp lại nhau ở thế giới bên kia. Chính bản lời này, chứ không phải bản gốc của Seress, là bản đi vòng quanh thế giới. Mọi bản dịch sau đó đều mọc ra từ nó, kể cả bản tiếng Việt bạn đang nghe.</p>
+  <p>Những năm 1930, báo chí bắt đầu gán cho bài hát khoảng một trăm cái chết, ở Hungary lẫn ở Mỹ. Người ta gọi nó là "bài hát tự tử Hungary". Đến năm 1941, khi Billie Holiday thu bản tiếng Anh, đài BBC cấm phát bản có lời vì cho rằng nó làm suy sụp tinh thần thời chiến; bản hòa tấu không lời thì vẫn được phát. Lệnh cấm đó kéo dài tới tận năm 2002.</p>
+
+  <div class="note"><strong>Phần thật và phần đồn:</strong> gần như không kiểm chứng được cái chết nào trong số đó. Các nhà nghiên cứu về sau chỉ ra rằng chưa có nghiên cứu nào tìm được liên hệ rõ ràng giữa bài hát và tự tử. Hungary thập niên 1930 có tỉ lệ tự tử cao thật, nhưng vì đói kém và nghèo khổ. Điều trớ trêu có thật là chuyện của chính tác giả: Seress qua đời vì tự tử năm 1968, khoảng 35 năm sau khi viết bài hát.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Phạm Duy viết lời Việt. Tựa tiếng Việt đi theo bản tiếng Pháp <i>Sombre Dimanche</i>, và giữ nguyên tình huống của Jávor: một người ngồi đợi, trong một ngày chủ nhật không còn ai để đợi.</p>
+
+  <div class="lyric">
+    <b>"Chủ nhật buồn, đi lê thê…"</b>
+    <i>Cả bài hát nằm trong ba chữ "đi lê thê". Tiếng Việt có nhiều chữ chỉ sự chậm, nhưng "lê thê" là chữ duy nhất vừa chậm vừa mệt, như cái gì đó bị kéo lết trên mặt đất. Ngày chủ nhật không trôi qua. Nó bị lôi đi.</i>
+  </div>
+
+  <div class="lyric">
+    <b>"…cầm một vòng hoa đê mê"</b>
+    <i>Vòng hoa, chứ không phải bó hoa. Trong tiếng Việt, vòng hoa là thứ mang đi viếng đám tang. Câu hát không nói ra chữ "chết" lần nào, nhưng đặt vòng hoa vào tay người đang đi, thì người nghe đã hiểu họ đang đi đâu.</i>
+  </div>
+
+  <div class="lyric">
+    <b>"Bước chân người nhớ thương ai"</b>
+    <i>Không phải "tôi nhớ thương ai". Chủ ngữ bị đẩy ra xa thành "bước chân người", như thể người hát đang đứng nhìn chính mình từ bên ngoài. Đây là chỗ lời Việt đi xa nhất khỏi bản Hungary: Jávor viết một lời trách móc gửi thẳng cho người yêu, còn Phạm Duy viết một người đã thôi không còn nói với ai nữa.</i>
+  </div>
+
+  <p class="credit">Nghe trọn lời: <a href="https://www.nhaccuatui.com/bai-hat/chu-nhat-buon-sombre-dimanche-pham-duy-ft-khanh-ly.5JlDAer6YN.html">bản lời đầy đủ trên NhacCuaTui</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Bản thu tiếng Hungary đầu tiên là của Pál Kalmár năm 1935. Bản tiếng Anh đầu tiên là của Hal Kemp năm 1936, nhưng phải đến Billie Holiday năm 1941 thì cả thế giới mới biết đến bài này.</li>
+    <li>Bản tiếng Anh của Holiday có thêm một đoạn cuối mà bản Hungary không có: hóa ra tất cả chỉ là một giấc mơ. Đoạn đó được thêm vào để bài hát bớt nặng nề và dễ phát trên đài hơn.</li>
+    <li>Khánh Ly hát bài này ở quãng giọng thấp, gần như không lên cao lần nào. Đó là lựa chọn đúng: giai điệu gốc vốn đi xuống liên tục, và giọng trầm khiến nó nghe như lời nói hơn là lời hát.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://en.wikipedia.org/wiki/Gloomy_Sunday">Gloomy Sunday — Wikipedia</a> ·
+    <a href="https://www.hungarianconservative.com/articles/culture_society/hungarian_suicide_song_gloomy_sunday_rezso_seress/">Hungarian Conservative: The 'Hungarian Suicide Song' and the man behind it</a> ·
+    <a href="https://hopamviet.vn/chord/song/chu-nhat-buon-sombre-dimanche-szomoru-vasarnap-gloomy-sunday/W8IUIUAC.html">Hợp Âm Việt — Chủ nhật buồn</a>
+  </p>
+
+  <p class="stamp">Đây là bài mẫu để bạn xem thử giọng văn và bố cục. Email thật mỗi sáng sẽ có đúng các phần này: một nút nghe, một câu chuyện, vài câu lời được mổ xẻ, vài chi tiết, và nguồn.</p>
+</div>
+
+</body>
+</html>
