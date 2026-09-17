@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Góc Phố Rêu Xanh</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>17/09/2026</span><span>Việt Nam · 1997–98</span><span>Lam Trường</span></div>
+
+  <h1>Góc Phố Rêu Xanh</h1>
+  <p class="dek">Người viết bài hát về kẻ đã ra đi, cùng năm đó, cũng trở thành người ra đi.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/Eo-LrGzqnXg" title="Góc Phố Rêu Xanh — Lam Trường"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=Eo-LrGzqnXg" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc &amp; lời: Nhật Trung · Trình bày: Lam Trường, album <i>Có Một Ngày</i></p>
+
+  <h2>Câu chuyện</h2>
+  <p>Buổi chiều thứ Bảy ở Sài Gòn năm 1997, con hẻm nào cũng có một cái radio bật sẵn đúng giờ. Đó là giờ của Làn Sóng Xanh — chương trình bình chọn ca khúc của Đài Tiếng nói Nhân dân TP.HCM, nơi cả một thế hệ thiếu niên ngồi im nghe xem bài mình vừa gọi điện thoại bàn để bầu có lọt vào top tuần đó không. Chỉ trong vài năm, chương trình ấy dựng nên gần như toàn bộ dàn sao nhạc trẻ sẽ thống trị cả thập niên sau: Mỹ Linh, Mỹ Tâm, Đan Trường, Phương Thanh, Đàm Vĩnh Hưng — và một giọng nam mảnh, hơi trầm, tên Lam Trường.</p>
+  <p>Tiêu Lam Trường, khi ấy hơn hai mươi tuổi một chút, vừa thành hiện tượng với "Tình thôi xót xa" của Bảo Chấn. Anh nhanh chóng trở thành một trong những giọng ca được yêu thích nhất Làn Sóng Xanh, liên tục nhiều năm liền. Giữa lúc phải chạy tìm bài mới để giữ đà đó, một ca khúc từ một nhạc sĩ trẻ, ít người biết mặt, đến tay anh: "Góc phố rêu xanh".</p>
+  <p>Người viết nó tên Nhật Trung, cũng chỉ ngoài hai mươi tuổi. Anh sinh năm 1969 trong một gia đình làm nhạc: cha là nhạc sĩ Hữu Xuân — người viết "Hoa tím ngày xưa" — mẹ là nghệ sĩ Xuân Nhung. Nhật Trung học dương cầm cổ điển từ năm 5 tuổi, ròng rã 16 năm, qua Nhạc viện Hà Nội rồi Nhạc viện TP.HCM, tốt nghiệp loại giỏi. Năm 14 tuổi anh đã phải đi đàn thuê ở Hà Nội để kiếm sống; vào đến Sài Gòn thì cộng tác với những nhạc sĩ đàn anh như Y Vân, Quốc Dũng, Bảo Chấn — cùng lứa với những người đang viết nhạc cho chính Lam Trường hát. "Góc phố rêu xanh", cùng với "Ngày em đi" — sau này được Thanh Lam hát rất thành công — là hai ca khúc đưa cái tên Nhật Trung ra khỏi cái bóng của cha mẹ mình.</p>
+  <p>Nhưng cũng chính năm ấy, 1998, khi "Góc phố rêu xanh" đang được phát đi phát lại trên các đài phát thanh, người viết ra nó lại rời Việt Nam. Nhật Trung sang Mỹ, học nhạc pop và kỹ thuật thu âm ở một trường tại Oakland, California, rồi ở lại hẳn, dần chuyển sang viết và hòa âm cho dòng nhạc hải ngoại. Một bài hát về việc lang thang qua một góc phố cũ để tìm bóng dáng ai đã đi mất, hóa ra lại được viết bởi một người sắp sửa chính là kẻ ra đi. Chưa có tài liệu nào xác nhận ông viết bài hát để nói về cuộc chia tay quê hương sắp tới của mình — nên đây chỉ nên xem là một trùng hợp thời điểm, không phải một sự thật đã kiểm chứng. Nhưng đó là trùng hợp đẹp, gắn bài hát vào đúng khoảnh khắc bản lề của nhạc trẻ Sài Gòn cuối thập niên 1990: giữa cái cũ và cái mới, giữa người ở lại và người đi.</p>
+  <p>Vì Nhật Trung rời đi sớm như vậy, "Góc phố rêu xanh" gần như là dấu ấn lớn nhất còn đọng lại trong trí nhớ đại chúng về ông ở Việt Nam, trong khi sự nghiệp thật sự sau này của ông — với vai trò nhạc sĩ hòa âm, nhà sản xuất cho dòng nhạc hải ngoại — diễn ra ở một sân khấu khác, xa hơn nhiều. Còn bài hát thì ở lại, được hát đi hát lại suốt hơn hai mươi năm qua, qua rất nhiều giọng ca: Đàm Vĩnh Hưng, Minh Tuyết, Lưu Bích, và chính Nhật Trung cũng từng tự hát lại bản của mình. Ít bài hát nào có vòng đời dài như vậy chỉ từ một câu chuyện tình rất thường — một người đứng ở góc phố cũ, tìm một bóng dáng đã xa, và thấy chỉ còn lớp rêu bám lại.</p>
+  <p>Bản Lam Trường hát — bản bạn đang nghe — nằm trong album <i>Có Một Ngày</i> của anh (có tài liệu ghi đĩa này phát hành khoảng năm 2001, dù bản thu và sự phổ biến của bài hát có thể đã bắt đầu sớm hơn qua các chương trình phát thanh và băng đĩa lẻ cuối thập niên 90). Giọng Lam Trường mảnh, hơi khàn — đúng kiểu giọng ballad làm nên tên tuổi anh ở Làn Sóng Xanh — không cố tỏ ra đau khổ, chỉ kể lại chầm chậm, như đang đi bộ một mình qua đúng góc phố ấy lần cuối.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> người viết bài hát về một kẻ đã đi mất, cùng năm bài hát nổi lên, cũng rời Việt Nam và không quay về làm nhạc trong nước nữa.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát mở ra đúng lúc giao mùa — trời vừa chuyển lạnh — và một người đi một mình qua những con phố quen, cố tìm lại dấu vết của ai đó đã không còn ở đó nữa. Càng đi, bóng dáng người kia càng lùi xa, cho tới khi thứ duy nhất còn nguyên vẹn chỉ là cái góc phố, giờ đã phủ một lớp rêu.</p>
+  <ul>
+    <li>Nhan đề không chọn "phố cũ" hay "phố buồn" mà chọn "rêu xanh" — thứ chỉ mọc ở nơi ẩm và tĩnh, nơi không ai còn bước qua thường xuyên nữa. Rêu không xoá ký ức, nó chỉ lặng lẽ phủ lên trên.</li>
+    <li>Mở bài bằng một sự chuyển mùa là mô-típ quen thuộc của ballad nhạc trẻ cuối thập niên 90 — thời tiết đứng vào vai trò kể chuyện thay cho nhân vật.</li>
+    <li>Cả bài không có lời trách móc, không nêu tên ai sai. Nỗi buồn dồn hết vào một góc phố vô tri, không phải vào người đã rời đi.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://loicakhuc.com/loi-bai-hat-goc-pho-reu-xanh-lam-truong/n86.html">loicakhuc.com</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Nhật Trung là con trai nhạc sĩ Hữu Xuân (tác giả "Hoa tím ngày xưa") và nghệ sĩ Xuân Nhung.</li>
+    <li>Ông học dương cầm cổ điển 16 năm, qua Nhạc viện Hà Nội rồi Nhạc viện TP.HCM.</li>
+    <li>"Ngày em đi" — ca khúc còn lại làm nên tên tuổi Nhật Trung ở Việt Nam — sau này được Thanh Lam hát rất thành công.</li>
+    <li>Làn Sóng Xanh ra đời năm 1997 tại Đài Tiếng nói Nhân dân TP.HCM, là bệ phóng chung của Lam Trường, Mỹ Linh, Mỹ Tâm, Đan Trường, Đàm Vĩnh Hưng.</li>
+    <li>"Góc phố rêu xanh" đã được hát lại bởi rất nhiều giọng ca suốt hơn hai mươi năm qua: Đàm Vĩnh Hưng, Minh Tuyết, Lưu Bích, Nhất Trung...</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://vi.wikipedia.org/wiki/Nh%E1%BA%ADt_Trung_(nh%E1%BA%A1c_s%C4%A9)">Wikipedia tiếng Việt — Nhật Trung (nhạc sĩ)</a> ·
+    <a href="https://vnexpress.net/nhung-ca-khuc-tao-nen-suc-hut-cua-lan-song-xanh-thoi-ky-dau-3591857.html">VnExpress — Những ca khúc tạo nên sức hút của Làn Sóng Xanh thời kỳ đầu</a> ·
+    <a href="https://lamtruong.vn/tieu-su">Lam Trường Official — Tiểu sử</a> ·
+    <a href="https://nhac.vn/bai-hat/goc-pho-reu-xanh-lam-truong-soDqmYR">Nhac.vn — Góc Phố Rêu Xanh (Lam Trường)</a>
+  </p>
+</div>
+</body>
+</html>
