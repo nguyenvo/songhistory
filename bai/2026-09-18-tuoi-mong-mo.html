@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tuổi Mộng Mơ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>18/09/2026</span><span>Việt Nam · 1973</span><span>Thùy Anh</span></div>
+
+  <h1>Tuổi Mộng Mơ</h1>
+  <p class="dek">Nhạc sĩ viết một loạt bài hát về tuổi mới lớn, rồi để chính con gái mình hát chúng.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/oPOxf46felk" title="Tuổi Mộng Mơ — Thùy Anh"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=oPOxf46felk" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc &amp; lời: Phạm Duy · Trình bày: Thùy Anh</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Mùa hè năm 1973 ở Sài Gòn, một cô gái mười lăm, mười sáu tuổi ngày ngày ôm cặp đi học về, rồi ngồi vào phòng thu để hát những bài cha mình vừa viết xong đêm hôm trước. Người cha ấy là Phạm Duy, khi đó đã ngoài năm mươi, đã là một trong những tên tuổi lớn nhất của tân nhạc Việt Nam. Cô gái là Thái Hiền, con ông với ca sĩ Thái Hằng — có tài liệu ghi cô sinh năm 1956, có tài liệu khác ghi 1958, chưa thể xác định chắc năm nào đúng.</p>
+  <p>Khoảng 1973-1974, Phạm Duy dồn sức viết liền mấy loạt bài hát chia theo lứa tuổi, thu cho trung tâm băng đĩa Shotguns: "Bình Ca" cho tuổi thiếu niên chung, "Bé Ca" cho trẻ nhỏ, và "Nữ Ca" — tám bài hát vẽ chân dung một người con gái đi qua từng chặng lớn lên. Tuổi Mộng Mơ đứng đầu cả loạt "Nữ Ca". Sau nó là Tuổi Hồng, Tuổi Ngọc, Tuổi Thần Tiên, Tuổi Sợ Ma, Tuổi Xuân, Tuổi Bâng Khuâng, Tuổi Ngu Ngơ — như tám tấm ảnh chụp cùng một cô gái ở tám thời điểm khác nhau của tuổi mới lớn.</p>
+  <p>Người hát cả tám bài ấy đầu tiên, và gắn tên mình vào chúng suốt từ đó, chính là Thái Hiền. Không phải một ca sĩ ông chọn vì hợp giọng, mà là con gái ruột — người mà loạt bài hát này, nói cho cùng, được viết ra để dành cho. Một nhạc sĩ ngồi viết về tuổi mười hai, tuổi mười ba trong khi con mình đang lớn lên ngay trước mắt, rồi lại chính con hát những gì cha viết — đó là kiểu cộng tác gia đình hiếm khi xảy ra trong tân nhạc Việt Nam, và cũng hiếm khi được nói đến nhiều bằng chính bài hát.</p>
+  <p>Cái khéo của Tuổi Mộng Mơ nằm ở chỗ nó không đứng ngoài nhìn vào tuổi mới lớn để mà thương cảm, kiểu người lớn viết cho trẻ con. Nó đứng hẳn vào trong đó, hỏi thẳng một câu hỏi mà chỉ người trong cuộc mới hỏi được: mình đang mơ gì, ở đúng cái tuổi này. Có lẽ chính vì được viết cho một người cụ thể, đang sống đúng những năm tháng ấy, nên bài hát không sa vào công thức "tuổi thơ hồn nhiên" chung chung mà nhiều bài hát viết về trẻ con hay mắc phải.</p>
+  <p>Sau Thái Hiền, Tuổi Mộng Mơ được rất nhiều giọng ca khác hát lại qua các thập niên — Thanh Lan, Vy Oanh, Xuân Nghi, và nhiều người trẻ hơn sau này. Bản bạn vừa nghe, của Thùy Anh, là một trong số đó: một giọng hát sinh sau bài hát này đến vài chục năm, hát lại đúng câu hỏi mà Phạm Duy từng đặt ra cho con gái mình nửa thế kỷ trước.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> tám bài hát về tuổi mới lớn của một cô gái, được viết bởi cha cô, rồi được chính cô hát lần đầu tiên.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát mở bằng một câu hỏi, không phải một lời khẳng định — hỏi thẳng một cô gái đang ở "tuổi mười hai, tuổi mười ba" là cô đang mơ những gì. Cả bài sau đó là một chuỗi câu trả lời tưởng tượng, rồi khép lại bằng một tiếng reo ngắn, không giải thích thêm — để nguyên giấc mơ đó lơ lửng, đẹp mà không cần lý do.</p>
+  <ul>
+    <li>Mở bài bằng câu hỏi, thay vì tự sự, đặt người hát vào đúng vị trí nhân vật — để chính người ở trong tuổi đó tự lên tiếng, không phải người ngoài kể lại.</li>
+    <li>Những hình ảnh được chọn đều là thứ một đứa trẻ mười hai, mười ba tuổi thực sự nghĩ tới, không phải hình ảnh người lớn gán cho tuổi thơ để làm nó đẹp hơn.</li>
+    <li>Bài hát không đưa ra bài học nào ở cuối — nó dừng lại đúng lúc giấc mơ còn nguyên, giống cách người ta thực sự nhớ về tuổi đó: không rõ ràng, nhưng đẹp.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://www.loibaihatviet.com/loi-bai-hat/loi-bai-hat-tuoi-mong-mo-pham-duy-88">loibaihatviet.com</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Tám bài "Nữ Ca" theo thứ tự: Tuổi Mộng Mơ, Tuổi Hồng, Tuổi Ngọc, Tuổi Thần Tiên, Tuổi Sợ Ma, Tuổi Xuân, Tuổi Bâng Khuâng, Tuổi Ngu Ngơ.</li>
+    <li>Thái Hiền, người hát đầu tiên, là con gái của Phạm Duy và ca sĩ Thái Hằng; các nguồn không thống nhất năm sinh của bà (1956 hoặc 1958).</li>
+    <li>Cùng thời gian đó Phạm Duy còn viết "Bình Ca" (cho tuổi thiếu niên nói chung) và "Bé Ca" (cho trẻ nhỏ) — cũng thu cho trung tâm Shotguns.</li>
+    <li>Về sau, Tuổi Mộng Mơ được nhiều giọng ca hát lại: Thanh Lan, Vy Oanh, Xuân Nghi, và nay là Thùy Anh.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://nhacxua.vn/thai-hien-va-tam-bai-nu-ca-nhung-ca-khuc-danh-cho-con-gai-tuoi-moi-lon/">nhacxua.vn — Thái Hiền và tám bài "Nữ Ca"</a> ·
+    <a href="https://vi.wikipedia.org/wiki/Th%C3%A1i_Hi%E1%BB%81n">Wikipedia tiếng Việt — Thái Hiền</a> ·
+    <a href="https://thoixua.vn/nghe-si/ca-si-thai-hien-nguoi-dua-nhung-ca-khuc-be-ca-nu-ca-den-voi-cong-chung.html">thoixua.vn — Ca sĩ Thái Hiền, người đưa "Bé ca", "Nữ ca" đến công chúng</a> ·
+    <a href="https://hopamviet.vn/chord/song/tuoi-mong-mo-nu-ca-1/W8IUIIWO.html">hopamviet.vn — Tuổi Mộng Mơ (Nữ ca 1)</a>
+  </p>
+</div>
+</body>
+</html>
