@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chỉ Còn Những Mùa Nhớ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>19/09/2026</span><span>Việt Nam · 2013</span><span>Bảo Trâm</span></div>
+
+  <h1>Chỉ Còn Những Mùa Nhớ</h1>
+  <p class="dek">Một bài hit đầu tay lớn đến mức chính người hát nó, nhiều năm sau, mới dám thừa nhận nó từng là một gánh nặng.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/bbCB3JEAZdY" title="Chỉ Còn Những Mùa Nhớ — Bảo Trâm"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=bbCB3JEAZdY" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc &amp; lời: có tài liệu ghi Minh Min (Đặng Trần Minh), có tài liệu ghi Nguyễn Đức Cường — chưa thống nhất · Trình bày: Bảo Trâm</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Tháng 12 năm 2013, một cô gái hai mươi hai tuổi đứng trước ống kính quay MV đầu tay của mình. Cô vừa rời <i>Vietnam Idol 2012</i> được vài tháng, mang theo một vị trí trong nhóm thí sinh xuất sắc nhất mùa giải — nhưng chưa có gì chứng minh cô sẽ trụ lại lâu hơn một cuộc thi truyền hình. Với một nghệ sĩ mới ra mắt, lựa chọn an toàn là quay một MV giản dị, kể một câu chuyện. Bảo Trâm chọn cách khó hơn: cô hóa thân thành bốn cô gái khác nhau, mặc bốn bộ trang phục do nhà thiết kế Hà Nhật Tiến may riêng, để kể bốn mối tình tan vỡ khác nhau trong cùng một MV, cho cùng một bài hát — "Chỉ còn những mùa nhớ".</p>
+  <p>Người viết bài hát còn trẻ hơn cả cô: một nhạc sĩ mới nổi tên Đặng Trần Minh, được biết đến nhiều hơn với nghệ danh Minh Min. Lúc đó anh vẫn còn là sinh viên báo chí, chưa từng học qua một khoá nhạc lý chính quy nào. Giai điệu đến với anh, theo lời anh kể lại, đơn thuần nảy ra từ cảm xúc chứ không phải từ lý thuyết. Anh viết bài hát đầu tay từ hồi cấp ba, rồi dần trở thành cái tên quen thuộc với dòng tình ca, đúng như biệt danh người ta gọi anh sau này — "chàng nhạc sĩ chuyên viết tình ca". Có tài liệu khác lại ghi tác giả bài hát là nhạc sĩ Nguyễn Đức Cường — thông tin về người viết bài hát chưa thống nhất giữa các nguồn, và tôi chưa kiểm chứng được rõ ràng.</p>
+  <p>"Chỉ còn những mùa nhớ" nhanh chóng vượt khỏi khuôn khổ một bài hát ra mắt bình thường. Nó leo lên các bảng xếp hạng nhạc trẻ, rồi được đạo diễn Vũ Ngọc Đãng đưa vào phim <i>Vòng eo 56</i> — dấu hiệu cho thấy bài hát đã bước ra khỏi playlist cá nhân để trở thành một phần ký ức chung. Giọng Bảo Trâm, trong và tha thiết, hợp với kiểu mất mát nhẹ nhàng chứ không gào thét — đúng chất ballad thịnh hành lúc bấy giờ.</p>
+  <p>Nhưng một thành công đến sớm và đến to như vậy hóa ra là một gánh nặng, không chỉ là một món quà. Nhiều năm sau, khi được hỏi lại, Bảo Trâm thừa nhận cô "từng áp lực vì thành công đến quá sớm". Sau "Chỉ còn những mùa nhớ", cô loay hoay chọn bài mới, sợ rằng bất cứ sản phẩm nào tiếp theo cũng sẽ bị đem ra so sánh và thấy thua kém. Nỗi sợ đó khiến cô ngần ngại ra nhạc mới trong một thời gian dài. Năm 2015 cô lập gia đình, rồi bận rộn với hai con nhỏ, sự nghiệp âm nhạc lùi lại phía sau — không hẳn vì cô bỏ cuộc, mà vì cuộc sống rẽ sang hướng khác.</p>
+  <p>Giờ nhìn lại, Bảo Trâm nói điều quan trọng với một người làm nghề không phải là có một bài hit, mà là có màu sắc riêng và đi được đường dài. Đó là cách nhìn nhẹ nhõm hơn về chính bài hát đã làm nên tên tuổi cô — không còn xem nó là đỉnh cao duy nhất phải rượt đuổi mãi, mà như một điểm khởi đầu. Bài hát vẫn còn đó, vẫn được mở lại mỗi khi ai đó cần một bản ballad về mùa và về nhớ. Còn người hát nó, năm hai mươi hai tuổi ấy, giờ đã đi một quãng đường khác hẳn — xa hơn, chậm hơn, và có lẽ nhẹ nhõm hơn.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> bài hát làm nên tên tuổi Bảo Trâm ngay từ sản phẩm đầu tay lại là thứ khiến cô mất nhiều năm mới dám ra nhạc mới, vì sợ không gì sánh được với nó.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát dùng hình ảnh những mùa nối tiếp nhau như một cách đếm thời gian đã trôi qua kể từ khi cuộc tình kết thúc, giữ lại một góc phố, một cơn mưa, một lời hẹn cũ làm điểm neo cho ký ức.</p>
+  <ul>
+    <li>Chọn "mùa" thay vì "năm" hay "tháng" là một lựa chọn tinh: mùa lặp lại, năm nào cũng quay về, nên nỗi nhớ trong bài không phải một lần rồi thôi, mà cứ đến hẹn lại lên.</li>
+    <li>Nhan đề rút gọn còn đúng hai thứ: mùa, và nhớ. Không có tên người, không có địa danh — để ai nghe cũng có thể gắn vào đó câu chuyện của riêng mình.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://hopamviet.vn/chord/song/chi-con-nhung-mua-nho/W8IUI7DA.html">hopamviet.vn</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Bảo Trâm sinh năm 1991, quê Bắc Giang; lọt vào nhóm thí sinh xuất sắc nhất <i>Vietnam Idol 2012</i> (có nơi ghi top 3, có nơi ghi top 4).</li>
+    <li>MV "Chỉ còn những mùa nhớ" ra mắt ngày 1/12/2013, với Bảo Trâm đóng bốn vai khác nhau, trang phục thiết kế riêng bởi Hà Nhật Tiến.</li>
+    <li>Bài hát sau đó được đưa vào phim <i>Vòng eo 56</i> của đạo diễn Vũ Ngọc Đãng.</li>
+    <li>Bảo Trâm kết hôn năm 2015, hiện có hai con.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://vnexpress.net/bao-tram-phan-than-ke-chuyen-tinh-buon-trong-mv-dau-tay-2917823.html">VnExpress — Bảo Trâm phân thân kể chuyện tình buồn trong MV đầu tay</a> ·
+    <a href="https://vtcnews.vn/bao-tram-idol-toi-ap-luc-vi-chi-con-nhung-mua-nho-qua-thanh-cong-ar708559.html">VTC News — Bảo Trâm Idol: Tôi từng áp lực vì "Chỉ còn những mùa nhớ" quá thành công</a> ·
+    <a href="https://giadinh.suckhoedoisong.vn/cuoc-song-vien-man-cua-bao-tram-sau-10-nam-buoc-ra-tu-vietnam-idol-172220928151858241.htm">Gia đình &amp; Xã hội — Cuộc sống viên mãn của Bảo Trâm sau 10 năm bước ra từ Vietnam Idol</a> ·
+    <a href="https://kenh14.vn/doi-song/gap-minh-min-chang-sinh-vien-bao-chi-co-tai-sang-tac-nhac-20130807030757584.chn">Kenh14 — Gặp Minh Min, chàng sinh viên báo chí có tài sáng tác nhạc</a>
+  </p>
+</div>
+</body>
+</html>
