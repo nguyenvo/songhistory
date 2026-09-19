@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cây Đàn Sinh Viên</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>19/09/2026</span><span>Việt Nam · 2001</span><span>Thùy Chi</span></div>
+
+  <h1>Cây Đàn Sinh Viên</h1>
+  <p class="dek">Bài hát bắt đầu từ một email của một sinh viên không ai biết tên, gửi cho một nhạc sĩ chưa từng gặp mặt.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/IMCS9O_UlM4" title="Cây Đàn Sinh Viên — Thùy Chi"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=IMCS9O_UlM4" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc: Quốc An · Lời: Thuận Thiên · Trình bày: Thùy Chi (bản đầu tiên: Mỹ Tâm, 2001–2002)</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Năm 2001, hộp thư điện tử của nhạc sĩ Quốc An nhận được một bức thư từ một cái tên lạ hoắc: Thuận Thiên. Không phải đồng nghiệp, không phải ca sĩ đi tìm bài hát — chỉ là một sinh viên. Cậu gửi kèm một đoạn văn xuôi, viết về những ngày ở giảng đường, cây đàn ghi-ta chuyền tay nhau trong phòng trọ, đứa bạn xa nhà, đứa bạn nhớ cha. Thuận Thiên không đòi hỏi gì cả, chỉ mong nhạc sĩ đọc thử — biết đâu phổ được thành một bài hát.</p>
+  <p>Quốc An đọc, giữ lại, rồi biến đoạn văn ấy thành lời ca. Ông viết nhạc, đưa cho Mỹ Tâm — khi đó vừa nổi lên như một hiện tượng — hát bản thu đầu tiên, phát hành qua hãng Bến Thành Audio & Video. "Cây Đàn Sinh Viên" ra đời như vậy: không phải một đơn đặt hàng, không phải cảm hứng từ chuyện tình riêng của người nhạc sĩ, mà từ một sinh viên vô danh muốn kể đúng những gì mình đang sống qua.</p>
+  <p>Bài hát nhanh chóng vượt khỏi khuôn khổ một bản thu âm. Nó lọt vào ký túc xá, vào những đêm sinh hoạt Đoàn - Hội, vào tay bất cứ ai cầm được cây đàn và biết dăm hợp âm cơ bản. Không phải vì giai điệu có gì cầu kỳ — ngược lại, nó đơn giản đến mức nghe một lần đã hát theo được — mà vì lời của Thuận Thiên trúng đúng cái mà cả một thế hệ sinh viên đang trải qua: xa nhà lần đầu, tự nấu ăn, tự lo tiền trọ, và có một cây đàn cũ để những đêm buồn còn có chỗ bấu víu.</p>
+  <p>Sau Mỹ Tâm, hàng loạt giọng ca khác hát lại: Việt Quang, nhóm 1088, rồi nhiều năm sau là Thùy Chi. Chi đến với công chúng theo một cách rất khác — năm 15 tuổi, một người bạn quay lại cảnh cô hát "Giấc Mơ Trưa" rồi đăng lên mạng, và bản thu tài tử ấy lan đi trước khi cô kịp nghĩ đến chuyện làm ca sĩ chuyên nghiệp. Lớn lên trong một gia đình cho học piano từ năm 6 tuổi, cô giữ nguyên lối hát nhẹ, mỏng, gần như thì thầm, không cố kịch tính hoá nỗi buồn. Khi Chi hát "Cây Đàn Sinh Viên", bài hát nghe như một sinh viên đang kể lại chuyện của chính mình, hơn là một ca sĩ đang trình diễn trên sân khấu.</p>
+  <p>Có một chi tiết khác về Quốc An mà vài trang tin có nhắc tới: rằng ông từng mất nhiều năm để viết một sáng tác riêng tri ân những người thầy của mình. Tôi không tiếp cận được bài viết gốc để đọc đầy đủ, nên chi tiết này — có tài liệu nói nhưng chưa kiểm chứng được — xin không đưa vào như một sự thật chắc chắn, và cũng chưa rõ có liên quan trực tiếp đến bài hát này hay không.</p>
+  <p>Điều kiểm chứng được rõ hơn là: bài hát được hát đi hát lại nhiều đến mức, với không ít người, gần như đã quên mất ai là tác giả. "Cây Đàn Sinh Viên" không còn là bài hát của riêng Quốc An hay Thuận Thiên nữa — nó trở thành bài hát của bất cứ ai từng là sinh viên, từng ôm một cây đàn chưa thật giỏi, hát cho vài người bạn cùng phòng nghe trong một đêm chẳng có gì đặc biệt.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> lời bài hát không do nhạc sĩ viết — nó bắt đầu từ một bức thư của một sinh viên gửi cho người chưa từng gặp, chỉ mong đoạn văn của mình có thể trở thành một bài hát.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Câu hát mở đầu nhắc tới "cây đàn ghi-ta" như vật thể trung tâm của cả bài — không phải giảng đường, không phải sách vở, mà là cây đàn, thứ duy nhất trong phòng trọ vừa là bạn vừa là chỗ trút nỗi lòng. Ngay sau đó là một câu Thuận Thiên viết cho cả phòng trọ chứ không chỉ cho riêng mình: <i>"có anh bạn xa nhà, có cô bạn nhớ cha"</i> — không kể một câu chuyện cụ thể, chỉ mở ra một chỗ trống để bất cứ ai đang nghe cũng có thể nhận ra mình trong đó.</p>
+  <p>Khác với phần lớn ballad nhạc trẻ cùng thời hay xoáy vào chia tay hoặc phản bội, "Cây Đàn Sinh Viên" gần như không có cao trào kịch tính. Nỗi buồn của nó nhẹ hơn nhiều — gần với nỗi nhớ nhà và cảm giác những năm sinh viên đang trôi qua, hơn là một mối tình cụ thể nào.</p>
+  <p class="credit">Bài hát có bản quyền nên trang này chỉ trích vài dòng để bàn, không đăng trọn lời. Đọc đầy đủ tại <a href="https://www.loibaihatviet.com/loi-bai-hat/loi-bai-hat-cay-dan-sinh-vien-quoc-an-co-nhac-nghe-co-karaoke-2873" target="_blank" rel="noopener">loibaihatviet.com</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Quốc An tên đầy đủ là Lưu Quốc An, sinh ngày 21/4/1973 tại TP.HCM.</li>
+    <li>Người viết lời, Thuận Thiên, gần như không để lại thông tin công khai nào khác — hiếm có trường hợp một bài hát nổi tiếng cỡ này mà phần lời do một người hoàn toàn vô danh viết, và vẫn vô danh cho tới nay.</li>
+    <li>Ngoài Mỹ Tâm và Thùy Chi, bài hát còn được hát lại bởi Việt Quang, nhóm 1088, Thái Tuyết Trâm, Lâm Khánh Chi, Thái Ngọc Bích và nhiều giọng ca không chuyên khác.</li>
+    <li>Thùy Chi sinh năm 1990 tại Hải Dương, được công chúng biết đến từ năm 15 tuổi qua bản thu "Giấc Mơ Trưa" lan truyền trên mạng — dù cô chưa từng chọn ca hát làm nghề chính.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://enews.agu.edu.vn/index.php?option=com_content&view=article&id=1842&Itemid=126" target="_blank" rel="noopener">e-News AGU — Cảm nhận âm nhạc: Cây đàn sinh viên</a> ·
+    <a href="https://hopamviet.vn/info/composer/210/quoc-an.html" target="_blank" rel="noopener">Hợp Âm Việt — Tiểu sử tác giả Quốc An</a> ·
+    <a href="https://nguoinoitieng.vn/tieu-su/tieu-su-ca-si-thuy-chi.html" target="_blank" rel="noopener">Người Nổi Tiếng — Tiểu sử ca sĩ Thùy Chi</a> ·
+    <a href="https://www.loibaihatviet.com/loi-bai-hat/loi-bai-hat-cay-dan-sinh-vien-quoc-an-co-nhac-nghe-co-karaoke-2873" target="_blank" rel="noopener">loibaihatviet.com — Lời bài hát</a>
+  </p>
+</div>
+</body>
+</html>
