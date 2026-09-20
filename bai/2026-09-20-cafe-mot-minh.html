@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cafe Một Mình</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>20/09/2026</span><span>Việt Nam · giữa thập niên 1990</span><span>Phương Thảo, Ngọc Lễ</span></div>
+
+  <h1>Cafe Một Mình</h1>
+  <p class="dek">Một bài hát về nỗi cô đơn, hát bởi hai người vừa hết cô đơn.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/f2MDjOnRnLQ" title="Cafe Một Mình — Phương Thảo, Ngọc Lễ"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=f2MDjOnRnLQ" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc &amp; lời: Ngọc Lễ · Trình bày: Phương Thảo, Ngọc Lễ, album <i>Café Một Mình</i></p>
+
+  <h2>Câu chuyện</h2>
+  <p>Năm 1990, trong một phòng tập ở Sài Gòn, có một ban nhạc rock tên Đen Trắng. Thủ lĩnh của nó là một chàng trai tóc dài, chơi guitar điện, tên Ngọc Lễ — kiểu thần tượng học trò thời đó. Trong ban nhạc có một ca sĩ trẻ mới vào, giọng trong mà buồn, tên Phương Thảo. Ngọc Lễ viết cho cô một bài để đi thi Tiếng hát hay TP.HCM — "Ai Cho Em Tình Yêu" — và cô đoạt giải ba.</p>
+  <p>Nhưng lúc đó họ chưa là gì của nhau. Mỗi người đang đi qua cuộc đời riêng, mỗi người đều đã từng có một cuộc hôn nhân, và đều đã đổ vỡ. Phải đến khi cả hai vấp ngã, gặp lại nhau lần nữa, mới nhận ra người đứng cạnh mình trong những buổi tập đàn suốt bao năm chính là người mình cần. Năm 1993 họ cưới nhau.</p>
+  <p>Album đầu tay của họ, tên là <i>Café Một Mình</i>, ra mắt giữa thập niên 1990 — tài liệu ghi năm khác nhau, có nơi 1995, có nơi 1996, chưa thể xác định chắc năm nào là đúng. Trong đó có "Xe Đạp Ơi", có "Cà Phê Một Mình" — cả hai đều do Ngọc Lễ viết. Album trở thành một trong những băng đĩa bán chạy nhất của nhạc trẻ Việt Nam lúc đó; có nơi nói con số khoảng một trăm ngàn bản, nhưng đây là một con số lưu truyền trên các trang nghe nhạc, chưa tìm được nguồn đủ tin để xác nhận, nên chỉ nên đọc như một cách nói "rất nhiều", không phải một thống kê chính xác.</p>
+  <p>Điều đáng để dừng lại không phải là con số đó. Mà là: "Cà Phê Một Mình" là một bài hát về nỗi cô đơn — một buổi sáng ngồi một mình, Sài Gòn bất chợt đổ mưa, một tách cà phê chỉ có một người uống — được viết ra, và được hát, bởi hai người vừa tìm thấy nhau, sau một hành trình dài không hề đơn giản để không còn phải cô đơn nữa.</p>
+  <p>Ở Việt Nam, ngồi uống cà phê một mình vốn không phải chuyện thường. Cà phê là chỗ để hẹn, để ngồi lâu với ai đó, để chuyện trò — hiếm khi là chỗ người ta chọn một mình, giữa phố, giữa lúc trời đổ mưa. Chính vì vậy hình ảnh này mới đứng được: nó không tả một buổi sáng bình thường, nó tả một buổi sáng bị bỏ lại. Với một đô thị vừa bắt đầu quen với việc từng người sống cuộc đời riêng của mình hơn — thập niên 1990, khi Sài Gòn mở cửa, cassette và băng đĩa tư nhân bùng nổ, mỗi gia đình có đầu máy riêng để tự nghe ở nhà thay vì tụ tập nghe chung — một bài hát về nỗi cô đơn rất cá nhân, rất đô thị, đến đúng lúc.</p>
+  <p>Nhưng cái khiến bài hát này khác những bài "cô đơn - mưa - cà phê" cùng thời (thời đó nhiều lắm, và về sau còn nhiều hơn) là ai đứng sau nó. Ngọc Lễ, người từng gào trên sân khấu rock ồn ào của Đen Trắng, giờ ngồi viết một bài chậm, buồn, về một buổi sáng mưa và một tách cà phê đã nguội — cho người vợ tương lai của mình hát. Phương Thảo, người từng đoạt giải nhờ một bài hát anh viết riêng cho mình, giờ hát lại đúng cảm giác cô đơn mà cả hai vừa cùng nhau bỏ lại phía sau. Họ không diễn nỗi cô đơn của người khác. Họ nhắc lại nỗi cô đơn của chính mình, ở thời điểm trước khi gặp lại nhau — rồi đứng cạnh nhau mà hát nó, trên cùng một sân khấu, cùng một album, cùng một cuộc hôn nhân vừa mới bắt đầu.</p>
+  <p>Đó cũng là lý do một bài hát tưởng như chỉ là một bản ballad thị trường lại nghe thuyết phục đến vậy: nó không phải nỗi cô đơn của người đang cô đơn, mà là nỗi cô đơn được kể lại, bởi người đã đi qua nó và đã ra khỏi nó. Có một khoảng cách rất nhẹ, rất an toàn, giữa người hát và cảm xúc trong bài — đủ để họ hát mà không bị nhấn chìm, đủ để người nghe cảm được cả nỗi buồn và cái ấm áp phía sau nó.</p>
+  <p>Phương Thảo - Ngọc Lễ tiếp tục là một trong số ít cặp "song ca" của nhạc Việt giữ được cả sân khấu lẫn hôn nhân qua hơn ba mươi năm — điều hiếm, vì hầu hết các cặp đôi ca sĩ cùng thời chỉ diễn cùng nhau trên giấy tờ hợp đồng, không phải trên giấy đăng ký kết hôn. Năm 2005 cả gia đình sang Mỹ định cư. Họ vẫn hát, vẫn viết nhạc, dù sân khấu nhỏ hơn nhiều so với thời "Cà Phê Một Mình" phát ra từ mọi tiệm băng đĩa ở Sài Gòn.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> một bài hát về một buổi sáng cô đơn, viết bởi một người sắp không còn phải cô đơn, hát bởi một người cũng vậy.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát mở ra bằng một buổi sáng mưa và một tách cà phê chỉ có một người uống, rồi cứ giữ nguyên hình ảnh ấy — không có cao trào, không có biến cố — suốt bài. Dưới đây là vài câu ngắn để bàn (bài hát có bản quyền nên không trích toàn bộ ở đây).</p>
+  <div class="lyric">
+    <b>"Sáng nay cà phê một mình, Sài Gòn chợt mưa chợt mưa"</b>
+    <i>Câu mở đầu, cũng là câu bị nhớ nhiều nhất. Chữ "chợt mưa chợt mưa" lặp hai lần liền không để nhấn mạnh, mà để mô phỏng đúng kiểu mưa Sài Gòn: đến bất chợt, tạnh cũng bất chợt.</i>
+  </div>
+  <div class="lyric">
+    <b>"Trời chợt lạnh như mùa đông"</b>
+    <i>Sài Gòn gần như không có mùa đông thật. Đem cái lạnh của một mùa mình chưa chắc từng sống qua ra so sánh, câu hát tự thú nhận: cái lạnh này không nằm ở ngoài trời.</i>
+  </div>
+  <div class="lyric">
+    <b>"Theo bước chân một ngày mưa bay"</b>
+    <i>Hình ảnh trong điệp khúc chỉ là đi bộ dưới mưa. Nỗi cô đơn ở đây không được kể bằng một biến cố lớn, mà bằng một việc rất nhỏ: bước đi.</i>
+  </div>
+  <p class="credit">Đọc trọn lời tại <a href="https://loicakhuc.com/loi-bai-hat-cafe-mot-minh-phuong-thao-ngoc-le/p2G.html">loicakhuc.com</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Ngọc Lễ và Phương Thảo gặp nhau năm 1990 trong ban nhạc rock Đen Trắng, do Ngọc Lễ làm thủ lĩnh.</li>
+    <li>Bài đầu tiên Ngọc Lễ viết cho Phương Thảo là "Ai Cho Em Tình Yêu", giúp cô đoạt giải ba cuộc thi Tiếng hát hay TP.HCM — trước khi hai người thành một đôi.</li>
+    <li>Họ cưới nhau năm 1993; có hai con gái, thường được gọi là bé Na và bé Nấm.</li>
+    <li>Năm 1997, sau khi con gái đầu chào đời, Ngọc Lễ viết "Ba Ngọn Nến Lung Linh" — một trong những bài hát gia đình được yêu thích nhất của nhạc Việt.</li>
+    <li>Ngoài đời, Phương Thảo là con lai — bà mất 28 năm mới tìm được cha ruột, một cựu quân nhân Mỹ. Đây là chi tiết đời tư của bà, chưa có tài liệu nào cho thấy liên quan trực tiếp tới việc viết bài hát này.</li>
+    <li>Năm 2005, gia đình sang Mỹ định cư; đến nay hai người vẫn hát và làm nhạc cùng nhau.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://ngoisao.vnexpress.net/tinh-yeu-30-nam-cua-phuong-thao-ngoc-le-4369385.html">Ngôi Sao (VnExpress) — Tình yêu 30 năm của Phương Thảo - Ngọc Lễ</a> ·
+    <a href="https://vnexpress.net/ngoc-le-phuong-thao-va-ba-ngon-nen-lung-linh-1870418.html">VnExpress — Ngọc Lễ - Phương Thảo và "Ba ngọn nến lung linh"</a> ·
+    <a href="https://znews.vn/hanh-trinh-28-nam-tim-cha-cua-ca-si-xe-dap-oi-phuong-thao-post115877.html">Znews — Hành trình 28 năm tìm cha của ca sĩ "Xe đạp ơi" Phương Thảo</a> ·
+    <a href="https://www.nhaccuatui.com/playlist/cafe-mot-minh-1997-phuong-thao-ngoc-le.k1YZ1zshERQr.html">NhacCuaTui — Café Một Mình (Phương Thảo - Ngọc Lễ)</a>
+  </p>
+</div>
+</body>
+</html>
