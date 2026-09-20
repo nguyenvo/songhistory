@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ru Ta Ngậm Ngùi</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>20/09/2026</span><span>Việt Nam · thập niên 1960–1970</span><span>Phương Chi (cover) · nhạc Trịnh Công Sơn</span></div>
+
+  <h1>Ru Ta Ngậm Ngùi</h1>
+  <p class="dek">Bài hát mà Trịnh Công Sơn viết ra không phải để ru ai, mà để ru chính ông.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/QvzwrwVUTNU" title="Ru Ta Ngậm Ngùi — Phương Chi (nhạc Trịnh Công Sơn)"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=QvzwrwVUTNU" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc &amp; lời: Trịnh Công Sơn · Trình bày trong bản này: Phương Chi (cover) · gắn liền với Khánh Ly từ thời Quán Văn</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Đêm nào đó giữa năm 1967, trên một bãi đất trống sau lưng trường Văn Khoa Sài Gòn, cỏ còn ướt sương, một cô gái đứng hát không giày. Không cát-sê, không mấy ai biết tên cô. Sân khấu chỉ là vài tấm cót ép dựng tạm, người ta gọi chỗ đó là Quán Văn. Ngồi bên cạnh, đệm đàn, là một người đàn ông gầy, ít nói, tên Trịnh Công Sơn. Trong những đêm như vậy, ông đưa cho cô hát rất nhiều bài mới viết — trong đó có một bài không viết để ai nghe, mà viết cho chính ông: "Ru ta ngậm ngùi".</p>
+  <p>Về thời điểm ông viết bài hát này, tư liệu không thống nhất. Có nguồn nói ông viết khoảng năm 1964, ngay sau khi tốt nghiệp trường Sư phạm Quy Nhơn và bị đưa lên B'Lao — nay là Bảo Lộc — làm hiệu trưởng một trường tiểu học chỉ có hai phòng học vách tre mái tranh, dựng trơ trọi giữa cao nguyên. Ba năm ở đó, ông sống xa Huế, xa Sài Gòn, xa gần như tất cả bạn bè, những đêm cao nguyên lạnh và vắng đến mức, theo lời người quen kể lại, ông thường ngồi một mình nhìn ra rừng núi cho tới khuya. Có nguồn khác lại ghi thời điểm sáng tác muộn hơn, khoảng 1970–71. Chưa có tài liệu nào đủ chắc chắn để khẳng định năm nào mới đúng — nhưng cả hai giả thuyết đều gặp nhau ở một điểm: đây là quãng đời Trịnh Công Sơn sống một mình nhiều nhất, và viết ra liền một chuỗi bài hát mà chính ông gọi là "ru" — Ru em từng ngón xuân nồng, Ru đời đi nhé, Ru em, Ru tình, và Ru ta ngậm ngùi.</p>
+  <p>Ông từng giải thích vì sao viết chuỗi bài "ru" ấy, bằng một câu sau này được trích lại rất nhiều lần: "Ru như thế không phải là ru em, mà thực chất là tôi tự ru tôi, tự ru để thanh lọc tâm hồn không vương một chút oán hờn nào…" Không phải ru một đứa trẻ ngủ, không phải ru người yêu đang giận dỗi, mà ru chính người đang hát ra nó. Đó là lý do "Ru ta ngậm ngùi" nghe khác hẳn những bản tình ca khác của ông: không có ai để trách, không có ai để chờ, chỉ có một người tự hỏi mình còn giữ được gì sau những đổ vỡ đã qua, rồi tự trả lời bằng chính sự im lặng của câu hát tiếp theo.</p>
+  <p>Bài hát viết ra trong cô độc ấy, sau đó lại được cất lên giữa đám đông. Quán Văn tồn tại chưa đầy ba năm, nhưng đủ để biến cô gái hát chân trần đêm nào — Khánh Ly — thành một hiện tượng của Sài Gòn cuối thập niên 1960. Người ta gọi cô là "nữ hoàng chân đất", không phải vì một hình ảnh được dàn dựng, mà vì cô không có giày phù hợp để đứng hát ngoài trời, trên nền cỏ. Giọng cô trầm, mộc, không phô kỹ thuật — thứ giọng khớp lạ lùng với những câu hát tự vấn của Trịnh Công Sơn hơn bất kỳ ai khác hát nhạc ông sau này. "Ru ta ngậm ngùi" là một trong những bài khiến khán giả Sài Gòn khi đó nhận ra: đây không chỉ là một nhạc sĩ có bài hát hay, mà là một cặp đôi nghệ thuật — một người viết ra nỗi cô đơn của chính mình, một người mang nó ra hát giữa công chúng, và hai việc tưởng như khác nhau ấy hóa ra chỉ là một.</p>
+  <p>Bản bạn vừa nghe không phải bản của Khánh Ly, mà là bản cover của Phương Chi — một trong rất nhiều giọng ca về sau tiếp tục hát lại bài này. Điều đó cũng cho thấy "Ru ta ngậm ngùi" chưa từng chỉ thuộc về một người hát. Nó vẫn tiếp tục làm đúng việc Trịnh Công Sơn viết ra nó để làm: cho bất kỳ ai cất giọng lên một chỗ để tự ru chính mình, dù đó là Khánh Ly trên bãi cỏ Quán Văn năm nào, hay một giọng ca của nhiều thập niên sau.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> theo lời chính Trịnh Công Sơn, những bài "ru" của ông không viết để dỗ ai ngủ — mà để ông tự ru mình, thanh lọc tâm hồn khỏi oán hờn.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Cả bài hát dựng trên một cấu trúc lặp lại: một câu hỏi dạng "...nào hãy còn...", rồi mới tới điều nhân vật muốn làm nếu điều ấy còn thật. Ba câu hỏi mở đầu hỏi về ba thứ rất cụ thể — môi, tóc, tim — chứ không hỏi những khái niệm trừu tượng như "tình yêu" hay "hạnh phúc".</p>
+  <ul>
+    <li>Câu đầu hỏi về "môi" — chữ "hãy còn" ở đó là một nghi vấn, không phải một lời khẳng định. Ông không nói môi ấy thơm, ông hỏi liệu có còn thơm không. Sự hoài nghi đã có sẵn trước khi hình ảnh kịp hiện ra.</li>
+    <li>Câu thứ hai hỏi về "tóc xanh" — tuổi trẻ. Nhưng đặt cạnh câu đầu, nó không còn là một lời khen mà là một điều kiện: chỉ khi tóc còn xanh thì mới xin được chút hồn nhiên — hồn nhiên trở thành thứ phải cầu xin, không còn là thứ đương nhiên có sẵn.</li>
+    <li>Câu thứ ba dùng động từ "rêu rao" cho chính đời mình. "Rêu rao" vốn là từ dùng cho tin đồn ngoài chợ, thứ người ta lan truyền về người khác. Trịnh Công Sơn đem nó áp vào chính mình — biến chuyện riêng thành thứ bị đem ra bàn tán, dù người rêu rao chính là ông.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://www.loibaihatviet.com/loi-bai-hat/loi-bai-hat-ru-ta-ngam-ngui-trinh-cong-son-296">loibaihatviet.com</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Trịnh Công Sơn dạy học ở B'Lao (Bảo Lộc) ba năm, 1964–1967, làm hiệu trưởng trường tiểu học Bảo An.</li>
+    <li>Chuỗi bài "ru" của ông gồm ít nhất năm bài: Ru em từng ngón xuân nồng, Ru đời đi nhé, Ru em, Ru tình, Ru ta ngậm ngùi.</li>
+    <li>Quán Văn — nơi Khánh Ly bắt đầu hát nhạc Trịnh — hoạt động khoảng hai năm rưỡi, trên bãi cỏ sau Đại học Văn Khoa Sài Gòn, không thu vé.</li>
+    <li>Năm sáng tác chính xác của bài hát vẫn chưa được xác định thống nhất: 1964 theo một số nguồn, 1970–71 theo nguồn khác.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://sites.google.com/site/lesitedenva/051-dich-loi-cac-bai-ca-viet-phap/trinh-cong-son-ru-ta-ngam-ngui">lesitedeNVA — Trịnh Công Sơn: Ru ta ngậm ngùi</a> ·
+    <a href="https://nhacxua.vn/su-ra-doi-cua-quan-van-be-phong-cua-tieng-hat-khanh-ly-va-nhac-trinh-cong-son/">Nhacxua.vn — Sự ra đời của "Quán Văn"</a> ·
+    <a href="https://cand.vn/trinh-cong-son-nhung-ngay-bao-loc-post298094.html">Công an Nhân dân — Trịnh Công Sơn, những ngày Bảo Lộc…</a> ·
+    <a href="https://www.honngocviendong.net/y-nghia-cua-nhung-bai-hat-ve-than-phan-noi-tieng-cua-nhac-si-trinh-cong-son-phoi-pha/">Hồn Ngọc Viễn Đông — Ý nghĩa những bài hát về thân phận của Trịnh Công Sơn</a>
+  </p>
+</div>
+</body>
+</html>
