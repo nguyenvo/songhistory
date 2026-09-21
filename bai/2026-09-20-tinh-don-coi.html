@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tình Đơn Côi</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>20/09/2026</span><span>Đài Loan 1999 → Việt Nam đầu 2000s</span><span>Nguyễn Phi Hùng</span></div>
+
+  <h1>Tình Đơn Côi</h1>
+  <p class="dek">Bài hát mà chính ca sĩ hát bản gốc từng từ chối, cho tới khi đoạn điệp khúc được viết lại.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/BgPSxNrDMqM" title="Tình Đơn Côi — Nguyễn Phi Hùng"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=BgPSxNrDMqM" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nguyên tác Hoa ngữ: 單身情歌 — nhạc Trần Diệu Xuyên (陳耀川), lời Dịch Gia Dương (易家揚) · Trình bày bản Việt: Nguyễn Phi Hùng</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Cuối năm 1999, trong một phòng thu ở Đài Bắc, ca sĩ Lâm Chí Huyền (Terry Lin) cầm bản demo một bài hát mới và lắc đầu. Đoạn điệp khúc, theo lời anh kể lại về sau, mang giọng gần như buông xuôi trước số phận — không phải cách anh muốn đứng trước một nỗi buồn. Lâm Chí Huyền ngồi lại với người viết lời, nhạc sĩ Dịch Gia Dương, để sửa lại đúng đoạn ấy: từ một tiếng than trở thành một lời tự nhắc mình phải vững vàng hơn sau mỗi lần tổn thương.</p>
+  <p>Bài hát đó — "Đơn thân tình ca" (單身情歌), nhạc Trần Diệu Xuyên — ra đời từ cuộc thương lượng nhỏ ấy, và nhanh chóng trở thành một trong những bản ballad được hát nhiều nhất của nhạc Hoa ngữ suốt hai mươi năm sau, đặc biệt vào dịp "ngày độc thân" 11/11 ở Đài Loan và Trung Quốc, khi nó gần như thành bài hát không chính thức của những người đang một mình.</p>
+  <p>Giai điệu ấy sang đến Việt Nam đầu những năm 2000, đúng lúc làn sóng "nhạc Hoa lời Việt" đang ở đỉnh cao — hàng loạt phòng thu cùng viết lời Việt cho cùng một bản nhạc Hoa, mỗi nơi một cái tên khác. Cùng giai điệu này, có "Bản tình ca cô đơn" qua giọng Minh Thuận, "Anh em dối trá" qua giọng Mỹ Thuyền — và "Tình đơn côi", gắn liền với tên tuổi Nguyễn Phi Hùng.</p>
+  <p>Trước khi là ca sĩ, Nguyễn Phi Hùng là một vũ công ballet. Sinh năm 1977 ở Đan Phượng, Hà Nội, ông tập múa từ nhỏ, tốt nghiệp Trường Múa Việt Nam năm 1996, vào biên chế một đoàn ca múa nhạc nhẹ trung ương, rồi năm 1998 chuyển hẳn vào TP.HCM để múa cho một đoàn ballet trong đó. Chỉ hai năm sau, dưới sự dìu dắt của một nghệ sĩ đi trước, ông rẽ sang ca hát — và một trong những bài đầu tiên đưa tên ông ra công chúng rộng chính là "Tình đơn côi".</p>
+  <p>Người viết lời Việt cho bản này vẫn còn là điều chưa rõ ràng: có nơi ghi tên một nhạc sĩ khác, có nơi lại ghi ngay tên Nguyễn Phi Hùng — chưa có nguồn nào đủ chắc chắn để khẳng định. Nhưng có một điều dễ nhận ra hơn: một người từng luyện tập cơ thể suốt hơn hai mươi năm để đứng vững trên sân khấu ballet, giờ hát một bài hát mà chính đoạn điệp khúc gốc, sau khi viết lại, cũng nói về việc đứng vững qua tổn thương. Đây chỉ là một cách đọc của riêng bài viết này, không phải điều ai từng xác nhận — nhưng nó phần nào lý giải vì sao bài hát hợp với giọng Nguyễn Phi Hùng: điềm tĩnh, không gào thét, giữ nhịp thở đều ngay giữa câu hát buồn nhất.</p>
+  <p>Bài hát giúp ông có chỗ đứng riêng giữa một thế hệ ca sĩ nhạc Hoa lời Việt đông đảo. Nó gần như ngủ yên trong ký ức thế hệ 8x một thời gian dài, cho tới khi được phát hành lại trên các nền tảng nhạc số cuối thập niên 2010, rồi bất ngờ sống lại lần nữa năm 2024, khi Nguyễn Phi Hùng — lúc này đã ngoài bốn mươi — giành ngôi quán quân cuộc thi truyền hình "Đấu trường ngôi sao", khiến nhiều người tìm lại đúng bản thu ông từng hát ở tuổi hai mươi mấy.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> đoạn điệp khúc nổi tiếng của bản gốc từng bị chính ca sĩ hát nó từ chối — và chỉ tồn tại sau khi được viết lại theo hướng vững vàng hơn, thay vì buông xuôi.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát có bản quyền, nên trang này không in lại lời. Đại thể, bài mở bằng hình ảnh một người đứng giữa một thế giới rất rộng, đi tìm một chỗ được yêu thương giữa đám đông xa lạ; sang tới điệp khúc, tình yêu được ví như thứ vừa có thể để trống một khoảng trong lòng người, vừa có thể thiêu đốt hết những ngày tháng còn lại — và ngay sau hình ảnh ấy là lời tự nhắc phải giữ cho tình yêu mạnh mẽ hơn qua từng lần vấp ngã, chứ không gục xuống vì nó.</p>
+  <ul>
+    <li>Điều đáng chú ý nhất không nằm ở một câu chữ cụ thể, mà ở việc đoạn điệp khúc này vốn không phải bản đầu tiên — nó là bản đã được thương lượng lại, nên mang đúng giọng của một người cố tình chọn đứng vững, không phải một người tình cờ lạc quan.</li>
+    <li>Hình ảnh tình yêu "vừa trống vừa thiêu đốt" là một nghịch lý được giữ nguyên trong bản Việt: một thứ có thể làm người ta trống rỗng và cháy hết cùng lúc, không mâu thuẫn với nhau.</li>
+  </ul>
+  <p class="credit">Đọc trọn lời bản Việt tại <a href="https://www.nhaccuatui.com/bai-hat/tinh-don-coi-1-nguyen-phi-hung.0RnH2dBeCw.html">nhaccuatui.com</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Bản gốc "單身情歌" (Dān shēn qíng gē) do Lâm Chí Huyền (Terry Lin) hát, phát hành cuối năm 1999 tại Đài Loan.</li>
+    <li>Cùng một giai điệu, thị trường nhạc Việt từng có ít nhất ba bản lời khác nhau: "Tình đơn côi", "Bản tình ca cô đơn" (Minh Thuận), "Anh em dối trá" (Mỹ Thuyền).</li>
+    <li>Nguyễn Phi Hùng tốt nghiệp Trường Múa Việt Nam năm 1996, là vũ công ballet chuyên nghiệp trước khi chuyển sang ca hát khoảng năm 2000.</li>
+    <li>Năm 2024, ông giành quán quân cuộc thi "Đấu trường ngôi sao", tạo một đợt chú ý mới tới các bản thu cũ như bài này.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Phi_H%C3%B9ng">Wikipedia (EN) — Nguyễn Phi Hùng</a> ·
+    <a href="https://hopampro.com/ca-si/nguyen-phi-hung/">Hopampro.com — Tiểu sử Nguyễn Phi Hùng</a> ·
+    <a href="https://trovetuoitho.com/tinh-don-coi-sieu-hit-duoc-gioi-tre-ngay-xua-ngan-nga-suot-ngay/">Trovetuoitho.com — Tình đơn côi, siêu hit một thời</a> ·
+    <a href="https://thvl.vn/doi-truong-nguyen-phi-hung-dang-quang-quan-quan-dau-truong-ngoi-sao-2024.html">THVL — Nguyễn Phi Hùng đăng quang Đấu trường ngôi sao 2024</a> ·
+    <a href="https://www.kkbox.com/tw/en/song/_--H1rq-B8cu2qyog4">KKBOX — 單身情歌, Terry Lin</a>
+  </p>
+</div>
+</body>
+</html>
