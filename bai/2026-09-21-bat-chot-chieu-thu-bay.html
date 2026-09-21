@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bất Chợt Chiều Thứ Bảy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>21/09/2026</span><span>Việt Nam · 2003</span><span>Mỹ Tâm</span></div>
+
+  <h1>Bất Chợt Chiều Thứ Bảy</h1>
+  <p class="dek">Bài hát nằm cạnh một cơn sốt, trong cùng một cuốn băng, và bị cơn sốt đó che khuất suốt hơn hai mươi năm.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/8vSO5FXvc7s" title="Bất Chợt Chiều Thứ Bảy — Mỹ Tâm"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=8vSO5FXvc7s" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Trình bày: Mỹ Tâm · album <i>Ngày Ấy &amp; Bây Giờ</i> (Vol.3, 2003)</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Tháng 6 năm 2003, Mỹ Tâm phát hành cuốn băng thứ ba trong sự nghiệp, tên là <i>Ngày Ấy &amp; Bây Giờ</i> — bìa băng ghi thêm tên tiếng Anh <i>Yesterday &amp; Now</i>. Đó là một trong những cuốn băng bán chạy nhất đời cô, khoảng một trăm nghìn bản, ở thời điểm con số ấy còn có nghĩa là băng đĩa thật mua ở sạp, không phải một lượt nghe trên ứng dụng.</p>
+  <p>Cuốn băng ấy có một bài hát tên "Ước Gì". Chỉ vậy thôi cũng đủ đóng khung cả sự nghiệp Mỹ Tâm suốt nhiều năm sau — người ta gọi cô là "ca sĩ của Ước Gì" trước khi gọi bằng bất cứ danh xưng nào khác. Điệu nhảy trong MV, hay bị nhắc đùa là "điệu say rượu", trở thành thứ để bắt chước ở khắp các buổi tiệc sinh nhật thời đó. Đó là kiểu bài hát mà một khi đã thành hiện tượng, nó gần như nuốt chửng mọi bài khác trong cùng cuốn băng vào bóng của mình.</p>
+  <p>"Bất Chợt Chiều Thứ Bảy" là một trong những bài bị nuốt như vậy. Nó nằm chung đĩa với "Ước Gì", chung đĩa với "Họa Mi Tóc Nâu" của nhạc sĩ Trần Huân — một bài khác cũng được nhớ tên nhiều hơn — và gần như không được nhắc tới trong các bài viết tổng kết sự nghiệp Mỹ Tâm về sau. Một số trang hợp âm trên mạng ghi nhạc sĩ Vũ Hoàng là người viết bài này, nhưng chưa có nguồn chính thống nào — không phải trang hãng đĩa, không phải phỏng vấn tác giả — xác nhận được điều đó, nên xin để ngỏ, chưa kiểm chứng.</p>
+  <p>Cái đáng nói ở đây không phải một giai thoại ly kỳ — bài hát này hình như không có giai thoại nào cả. Cái đáng nói là vị trí của nó: một bản ballad tử tế, thu âm tử tế, nằm trong đúng cuốn băng làm nên tên tuổi một ca sĩ, nhưng chưa từng có cơ hội được nghe riêng, tách khỏi cái bóng của người hàng xóm ồn ào trên cùng track-list. Nghe nó bây giờ, hơn hai mươi năm sau, giống như tình cờ lật sang mặt B của một cuốn băng cũ — nơi không có bài hit, nhưng lại giữ đúng cái không khí của năm đó: Mỹ Tâm ở tuổi hai mươi mấy, giọng còn rất trẻ, hát một nỗi buồn cuối tuần không tên, không cần gồng lên thành hiện tượng gì.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> bài hát nằm trong cùng một cuốn băng với "Ước Gì" — ca khúc lớn nhất đời Mỹ Tâm — và bị chính người hàng xóm ồn ào đó che khuất suốt hơn hai mươi năm.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát mở ra bằng một buổi chiều thứ Bảy không có gì đặc biệt về thời tiết — không mưa, không nắng gắt, không giông bão. Nhưng bên trong người hát thì ngược lại hoàn toàn: vừa như có nắng vừa như có mưa, vừa yên vừa động, cùng một lúc. Đây là mẹo quen thuộc của ballad Việt đầu những năm 2000 — lấy sự bình lặng bên ngoài làm nền, để cái xáo trộn bên trong nổi rõ hơn, thay vì gọi tên trực tiếp cảm xúc đó.</p>
+  <p>Càng về sau, bài hát càng lùi vào một khoảng mờ hơn: đi tìm trong giấc mơ, nhưng giấc mơ chỉ toàn sương khói; gọi tên người cũ nhiều lần, trong khi kỷ niệm cứ nhạt dần. Không có nhân vật thứ hai nào xuất hiện rõ mặt — chỉ có người hát, một buổi chiều, và khoảng trống một người đã để lại.</p>
+  <p class="credit">Bài hát còn bản quyền, nên đây chỉ là mấy nét tóm ý, không phải lời gốc — bản thân tôi cũng chưa tìm được một bản chép lời đủ tin cậy để trích nguyên văn. Ai cần lời đầy đủ có thể tra ở các trang hợp âm như <a href="https://hopamviet.vn/chord/song/bat-chot-chieu-thu-bay/W8IU8COD.html">hopamviet.vn</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li><i>Ngày Ấy &amp; Bây Giờ</i> (Vol.3, tên tiếng Anh <i>Yesterday &amp; Now</i>) phát hành tháng 6/2003, khoảng 100.000 bản.</li>
+    <li>Cùng album: "Ước Gì" — bài hát định danh sự nghiệp Mỹ Tâm suốt nhiều năm — và "Họa Mi Tóc Nâu" (Trần Huân).</li>
+    <li>Điệu nhảy trong MV "Ước Gì" trở thành một hiện tượng được bắt chước rộng rãi thời điểm đó.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://vnexpress.net/my-tam-boi-hoi-hat-uoc-gi-3337130.html">VnExpress — Mỹ Tâm bồi hồi hát "Ước gì"</a> ·
+    <a href="https://tuoitre.vn/my-tam-tu-giong-ca-vang-muc-tim-den-bang-xep-hang-billboard-20180208110908858.htm">Tuổi Trẻ — Mỹ Tâm: từ Giọng ca vàng Mực Tím đến Billboard</a> ·
+    <a href="https://www.discogs.com/master/1331044-M%E1%BB%B9-T%C3%A2m-Yesterday-Now">Discogs — Mỹ Tâm, Yesterday &amp; Now</a>
+  </p>
+</div>
+</body>
+</html>
