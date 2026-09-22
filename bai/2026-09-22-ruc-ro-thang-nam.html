@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rực Rỡ Tháng Năm</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>22/09/2026</span><span>Việt Nam · 2025</span><span>Mỹ Linh &amp; Mỹ Anh</span></div>
+
+  <h1>Rực Rỡ Tháng Năm</h1>
+  <p class="dek">Bài hát mẹ con hiếm hoi cùng hát, đúng vào lúc nó nói về năm tháng đã qua.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/wBtB63YEE04" title="Rực Rỡ Tháng Năm — Forest Studio, Mỹ Linh, Mỹ Anh"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=wBtB63YEE04" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Trình bày: Forest Studio, Bùi Công Nam, Anh Tú, Lâm Bảo Ngọc, Mỹ Linh, Mỹ Anh</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Trong một buổi thu âm của Forest Studio — kênh chuyên làm những video "phòng thu" nhỏ, nơi vài nghệ sĩ đứng quanh một micro, hát trực tiếp không lồng tiếng — có một chi tiết mà nếu không để ý kỹ danh sách người hát, rất dễ bỏ qua. Trong dàn nghệ sĩ góp giọng cho "Rực Rỡ Tháng Năm", cùng với Bùi Công Nam, Anh Tú, Lâm Bảo Ngọc, có hai cái tên là mẹ con: Mỹ Linh và Mỹ Anh.</p>
+  <p>Mỹ Linh không cần giới thiệu nhiều với người nghe nhạc Việt. Bà là một trong bốn giọng ca vẫn được gọi chung là "diva" nhạc Việt, nổi lên từ giữa thập niên 1990, cái thời còn hát trên sân khấu Nhà hát Lớn, còn thu băng cối. Một giọng hát đã định hình cả một quan niệm về thế nào là hát hay ở Việt Nam suốt ba mươi năm.</p>
+  <p>Mỹ Anh là con gái út của bà, sinh đầu những năm 2000, và là người duy nhất trong ba người con của Mỹ Linh chọn đi hát chuyên nghiệp. Nhưng con đường của Mỹ Anh không đi theo lối mẹ đã có sẵn. Cô tự học hòa âm, phối khí, sản xuất, tự viết nhạc — chủ động xây dựng hình ảnh một nghệ sĩ độc lập (indie), và có tài liệu kể rằng chính Mỹ Linh nhiều lần muốn giúp con trong quá trình làm nhạc nhưng bị từ chối, vì Mỹ Anh không muốn dựa vào cái tên của mẹ. Năm 2021 cô vào chung kết á quân cuộc thi The Heroes, tự đứng trên sân khấu lớn bằng chính tên mình, không phải bằng danh xưng "con gái diva Mỹ Linh".</p>
+  <p>Chính vì mỗi người đi một hướng như vậy, hai mẹ con hiếm khi đứng chung sân khấu. Nhìn lại báo chí giải trí nhiều năm qua, mỗi lần họ song ca đều được nhắc tới như một sự kiện riêng: một lần ở chương trình từ thiện "Cặp lá yêu thương" với bài "Nắng sớm", một lần với "Giọt sương trên mí mắt", một lần Mỹ Anh rủ mẹ quay video hát cover trên TikTok năm 2021. Không phải vì họ ngại nhau, mà vì lịch mỗi người đều kín, và vì Mỹ Anh, theo đúng tinh thần độc lập của mình, không biến việc có mẹ nổi tiếng thành một con đường tắt.</p>
+  <p>Vậy nên khi cả hai cùng xuất hiện trong phiên thu này của Forest Studio năm 2025 — cùng một video, cùng một dàn hợp ca gồm những giọng ca thuộc nhiều thế hệ khác nhau của nhạc Việt — đó là một lần hiếm hoi khác để nghe họ hát cạnh nhau. Và bài hát họ chọn hát cùng, đúng lúc đó, lại có tên là "Rực Rỡ Tháng Năm" — một bài về việc quay lại tìm những năm tháng đã qua, những gì từng rực rỡ mà giờ chỉ còn trong ký ức. Cùng đợt thu đó, nhóm nghệ sĩ này còn hát thêm một bài khác cũng về chủ đề tương tự, "Trở Lại Tuổi Thơ" — cho thấy đây là một phiên thu được chủ đích xây dựng quanh ý niệm hoài niệm, nhìn lại thời gian đã trôi.</p>
+  <p>Một bài hát về việc tìm lại "rực rỡ năm tháng tuổi thơ", hát bởi một người đã đi qua gần trọn sự nghiệp của mình và một người mới chỉ bắt đầu — đó là chỗ bài hát này thú vị hơn một bản phòng thu thông thường. Không phải vì có ai kể một câu chuyện tình buồn đằng sau nó, mà vì chính việc ai đứng hát nó, cạnh ai, đã tự nói lên đúng chủ đề của ca khúc: năm tháng trôi qua giữa hai thế hệ, mà âm nhạc là sợi dây nối lại.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> đây không phải một bài hát có giai thoại sáng tác nổi tiếng — nó là một bản thu theo dự án năm 2025, chưa có nhiều báo chí viết về quá trình viết bài. Góc để kể ở đây không nằm ở bài hát tự thân, mà ở chỗ nó được hát bởi ai: một người mẹ đã đi gần trọn sự nghiệp, và cô con gái chọn tự đi con đường riêng.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Điệp khúc bài hát là một chuỗi động từ "tìm" lặp lại — tìm lại ngày tháng cũ, tìm một thời đã qua, tìm một hạnh phúc chưa từng có, tìm lại sự rực rỡ của tuổi thơ.</p>
+  <div class="lyric">
+    <b>"Tìm lại rực rỡ năm tháng tuổi thơ"</b>
+    <i>Câu chốt của điệp khúc, cũng là câu đặt tên cho cả bài. Động từ "tìm lại" giả định một điều: thứ đang được tìm đã từng có, và đã mất.</i>
+  </div>
+  <div class="lyric">
+    <b>"Tìm một hạnh phúc chưa có bao giờ"</b>
+    <i>Đặt cạnh câu trên, nó tạo ra một nghịch lý nhỏ: vừa tìm lại cái đã có, vừa tìm một cái chưa từng có. Nỗi hoài niệm ở đây không chỉ nhìn về sau, nó còn ngóng về phía trước.</i>
+  </div>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Tìm lời đầy đủ trên các trang nhạc số như <a href="https://www.nhaccuatui.com/bai-hat/ruc-ro-thang-nam-forest-studio-ft-bui-cong-nam-ft-anh-tu-ft-lam-bao-ngoc-ft-my-linh-ft-my-anh.GPr3dHyUo6rA.html">NhacCuaTui</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Mỹ Linh là một trong bốn giọng ca vẫn được gọi là "diva" nhạc Việt, cùng Thanh Lam, Hồng Nhung, Trần Thu Hà.</li>
+    <li>Mỹ Anh là con gái út của Mỹ Linh và nhạc sĩ Anh Quân; cô tự học hòa âm, phối khí, sản xuất, viết nhạc để chủ động làm nghệ sĩ độc lập.</li>
+    <li>Mỹ Anh là á quân cuộc thi âm nhạc The Heroes năm 2021.</li>
+    <li>Những lần hai mẹ con song ca trước đây — "Nắng sớm" ở "Cặp lá yêu thương", "Giọt sương trên mí mắt" — đều là những sự kiện hiếm, được báo chí giải trí ghi lại riêng từng lần.</li>
+    <li>Cùng phiên thu này, nhóm nghệ sĩ còn thu thêm bài "Trở Lại Tuổi Thơ", cho thấy chủ đề hoài niệm là chủ đích của cả dự án.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://ngoisao.vnexpress.net/me-con-my-linh-my-anh-song-ca-an-y-5109654.html">VnExpress Ngôi Sao — Mẹ con Mỹ Linh - Mỹ Anh song ca ăn ý</a> ·
+    <a href="https://vietnamnet.vn/my-anh-con-gai-ut-cua-my-linh-co-gi-dac-biet-737466.html">VietNamNet — Mỹ Anh, con gái út của Mỹ Linh có gì đặc biệt?</a> ·
+    <a href="https://vnexpress.net/con-gai-my-linh-song-ca-cung-me-trong-cap-la-yeu-thuong-3877941.html">VnExpress — Con gái Mỹ Linh song ca cùng mẹ trong "Cặp lá yêu thương"</a> ·
+    <a href="https://open.spotify.com/track/4ywXihlEfmJgmoofEoR6g5">Spotify — Rực rỡ tháng năm</a>
+  </p>
+</div>
+</body>
+</html>
