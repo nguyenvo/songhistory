@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tình Thắm Duyên Quê</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>22/09/2026</span><span>Việt Nam · 1957</span><span>Trúc Phương</span></div>
+
+  <h1>Tình Thắm Duyên Quê</h1>
+  <p class="dek">Bài hát vui hiếm hoi của người sau này được gọi là "ông hoàng nhạc buồn".</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/ThbLqMrlBjo" title="Tình Thắm Duyên Quê — Đoàn Phi, Cát Lynh"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=ThbLqMrlBjo" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc &amp; lời: Trúc Phương · Trình bày: Đoàn Phi, Cát Lynh (Asia 74)</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Năm 1957, ở Sài Gòn, có một thanh niên 24 tuổi vừa rời Trà Vinh lên lập nghiệp, ghi tên vào lớp nhạc của nhạc sĩ Trịnh Hưng. Tên thật của anh là Nguyễn Thiên Lộc. Sau này người ta sẽ chỉ còn gọi anh bằng nghệ danh: Trúc Phương.</p>
+  <p>Anh viết hai bài hát đầu tay gần như cùng lúc. Một bài tên "Tình thương mái lá". Bài kia là "Tình thắm duyên quê" — bài bạn đang nghe.</p>
+  <p>Nếu chỉ biết Trúc Phương qua những gì ông viết về sau — "Nửa đêm ngoài phố", "Buồn trong kỷ niệm", "Mưa nửa đêm" — thì nghe "Tình thắm duyên quê" sẽ hơi lạ. Đây gần như là bài vui hiếm hoi trong sự nghiệp gần 70 ca khúc của ông. Không tiếng mưa. Không nỗi buồn nửa đêm. Chỉ có mái tranh, con đò ngang, cánh đồng lúa chín, và một mối tình chân chất giữa hai người trẻ ở quê.</p>
+  <p>Người đời sau gọi Trúc Phương là "ông hoàng bolero", nhưng cái danh xưng đó luôn đi kèm một chữ khác: buồn. Phần lớn những bài hit làm nên tên tuổi ông sau này đều mang một màu u uất — người ở lại, người ra đi, đêm khuya, mưa rơi trên mái phố. Nghe lại "Tình thắm duyên quê", ta gặp một Trúc Phương khác hẳn: còn trẻ, còn nguyên vẹn niềm tin vào một cuộc sống yên bình chốn thôn dã. Đó là trước khi Sài Gòn, trước khi những cuộc tình dang dở, trước khi tên tuổi ông gắn chặt với nỗi sầu, kịp làm ông đổi khác.</p>
+  <p>Trớ trêu là, gần bốn mươi năm sau bài hát vui vẻ ấy, đời thật của Trúc Phương lại đi đúng chiều ngược lại với những gì ông viết ra ở tuổi 24. Sau năm 1975, ông mất nhà, có một khoảng thời gian phải sống lang thang không chốn nương thân suốt nhiều tháng liền. Gia đình ông cũng tan vỡ theo, vợ con mỗi người một nơi. Ông qua đời trong một căn phòng trọ chật hẹp ở quận 11, một mình, trong cảnh nghèo khó — có tài liệu ghi ông mất ngày 18-9-1995, có tài liệu khác lại ghi 21-9-1996; chưa kiểm chứng được năm nào mới đúng. Bài hát cuối cùng ông viết, không lâu trước khi mất, mang tên "Xin cảm ơn đời".</p>
+  <p>Vậy nên "Tình thắm duyên quê" không đơn thuần là một bài hát vui về làng quê. Nó giống một tấm ảnh chụp Trúc Phương của những ngày đầu tiên — khi âm nhạc còn là một cánh cửa vừa mở ra, chưa phải nơi ông trút hết nỗi buồn của cả một đời người. Nghe bài này, ta nghe được cả sự hồn nhiên của một người 24 tuổi, lẫn cái bóng mờ của những gì sẽ đến với anh sau đó — dù dĩ nhiên, chàng trai của năm 1957 không thể biết trước điều gì đang chờ mình.</p>
+  <p>Bài hát cũng ra đời đúng lúc. Cuối thập niên 1950, dòng nhạc quê hương — ca ngợi cảnh sắc đồng quê, đời sống thôn dã, tình yêu chân thật miền Nam — mới bắt đầu định hình, chuẩn bị nở rộ suốt thập niên 1960. Trúc Phương, với "Tình thắm duyên quê", nằm trong số những người đặt viên gạch đầu cho dòng nhạc ấy, trước khi chính ông rẽ hẳn sang một hướng khác: bolero của những đêm mưa và những cuộc chia ly, thứ rồi sẽ mang tên ông đi khắp nơi.</p>
+  <p>Bản thu bạn đang nghe là song ca của Đoàn Phi và Cát Lynh, hai giọng ca quen thuộc của các chương trình hải ngoại, thu trong Asia 74 — sân khấu vẫn hay chọn lại đúng những bài hát mang màu sắc quê hương miền Nam trước 1975 để dựng thành các liên khúc, hoạt cảnh đồng quê. Đây không phải bản thu gốc, nhưng nó giữ đúng tinh thần ban đầu: một bài hát của một người 24 tuổi, viết về một miền quê mà khi đó, có lẽ chính anh cũng không ngờ mình sẽ đi xa đến vậy — cả nghĩa đen lẫn nghĩa bóng.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> bài hát đầu tay vui vẻ nhất của một người rồi sẽ nổi tiếng vì viết nhạc buồn — và đời thật của ông, mấy chục năm sau, hoá ra buồn hơn cả những gì ông từng viết.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài mở đầu bằng hình ảnh mái tranh, mái tóc xanh, rồi chuyển sang một điệp khúc mang dáng hò đối đáp giữa đôi trai gái ở một bến sông quê.</p>
+  <div class="lyric">
+    <b>"Tình nồng thắm xuyên qua bao mái tranh<br>Ngọt ngào dâng hương vương mái tóc xanh"</b>
+    <i>— câu mở đầu</i>
+  </div>
+  <div class="lyric">
+    <b>"Em ơi khoan hò khoan, lúa chín tô mồ hôi"</b>
+    <i>— điệp khúc</i>
+  </div>
+  <ul>
+    <li>Mái tranh, không phải mái ngói hay mái phố — Trúc Phương định vị ngay từ câu đầu: đây là tình quê.</li>
+    <li>Tiếng "khoan hò khoan" mượn thẳng từ hò đối đáp dân ca Nam Bộ, quê ông, đưa vào một bài tân nhạc viết ở Sài Gòn.</li>
+    <li>"Lúa chín tô mồ hôi" không nói mồ hôi đổ xuống ruộng, mà nói mồ hôi "tô" nên hạt lúa — công sức người nông dân thành một phần vẻ đẹp, không chỉ là cái giá phải trả.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://lyrics.vn/lyrics/6371-tinh-tham-duyen-que.html">lyrics.vn</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>"Tình thắm duyên quê" và "Tình thương mái lá" là hai bài hát đầu tay của Trúc Phương, cùng viết năm 1957.</li>
+    <li>Tên thật của Trúc Phương là Nguyễn Thiên Lộc, sinh năm 1933 tại Trà Vinh (khi đó là tỉnh Vĩnh Bình).</li>
+    <li>Sau hai bài đầu tay là "Chiều làng em" (1958) và "Đò chiều" (1959) — ông bước rất nhanh vào dòng nhạc chính lưu.</li>
+    <li>Cả sự nghiệp Trúc Phương có khoảng 70 ca khúc, phần lớn thuộc dòng bolero buồn — trái ngược hẳn với bài hát đầu tay này.</li>
+    <li>Bài hát cuối cùng ông viết, không lâu trước khi mất, mang tên "Xin cảm ơn đời".</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://baophapluat.vn/cuoc-doi-buon-cua-ong-hoang-bolero-truc-phuong-post535665.html">Báo Pháp Luật VN — Cuộc đời buồn của "ông hoàng bolero" Trúc Phương</a> ·
+    <a href="https://nhacxua.vn/cuoc-doi-va-su-nghiep-cua-nhac-si-truc-phuong-ong-hoang-cua-nhac-bolero/">Nhacxua.vn — Cuộc đời và sự nghiệp nhạc sĩ Trúc Phương</a> ·
+    <a href="https://hopamviet.vn/info/composer/6/truc-phuong.html">Hợp Âm Việt — Tiểu sử tác giả Trúc Phương</a>
+  </p>
+</div>
+</body>
+</html>
