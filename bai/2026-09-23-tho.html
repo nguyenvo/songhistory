@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thở</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>23/09/2026</span><span>Việt Nam · 2021</span><span>Da LAB, Juky San</span></div>
+
+  <h1>Thở</h1>
+  <p class="dek">Bài hát được đặt hàng để bán máy lọc không khí, lại hoá ra là bài đúng nhất về việc không thở nổi.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/K8s6VVBesb4" title="Thở — Da LAB, Juky San"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=K8s6VVBesb4" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Sáng tác &amp; trình bày: Da LAB · ft. Juky San · phát hành 8/4/2021</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Tháng Tư năm 2021, Da LAB nhận một đơn đặt hàng khác hẳn mọi thứ nhóm từng làm: viết một bài hát cho chiến dịch quảng cáo máy lọc không khí của Panasonic. MV được dựng để mở đường cho dòng sản phẩm cải thiện chất lượng không khí trong nhà của Panasonic Life Solutions, với thông điệp "Breathe with Panasonic". Nói thẳng ra: đây là một bài hát nhạc quảng cáo, viết theo đề bài của nhãn hàng.</p>
+  <p>Nhạc quảng cáo thường khó tránh cảm giác gán ghép — cứ vài câu lại phải nhắc khéo đến sản phẩm, nghe là biết ai trả tiền. Nhưng Da LAB, nhóm đã có hơn một thập niên lăn lộn ở nhạc underground Hà Nội trước khi được biết đến rộng rãi, chọn một lối khác: thay vì viết về máy lọc khí, họ viết về lý do người ta cần thứ đó — một ngày dài đến mức quên mất cả việc thở. Có tài liệu nói nhóm từng đùa rằng đặt tên bài là "Thở" vì kiểu gì cũng thành hit — nhưng đây chỉ là giai thoại lan truyền, chưa tìm được nguồn chính thức xác nhận trực tiếp từ nhóm.</p>
+  <p>Người hát cùng là Juky San, một giọng ca khi đó vẫn còn khá mới. Cô tên thật Trần Thị Dung, sinh năm 1998, lớn lên ở Thái Bình, được chú ý lần đầu qua Giọng hát Việt mùa 6 năm 2019, rồi bất ngờ bùng lên cùng năm 2021 với bản hit "Phải chăng em đã yêu". Giọng Juky San không thuộc dạng nội lực hay kỹ thuật cao, mà nhẹ, hơi thủ thỉ, như đang kể chuyện chứ không phải đang trình diễn — đúng kiểu giọng để đặt cạnh phần rap trầm, chậm rãi của Da LAB, cho một bài hát về việc kiệt sức mà không dám nói ra.</p>
+  <p>Bài hát không kể một câu chuyện tình cụ thể. Nó đi theo tâm trạng một người trẻ thành thị: chạy theo deadline, theo những cột mốc phải đạt được, đến mức khi ngoảnh lại, thấy mình đã lên đến một "đỉnh cao" nào đó mà không còn ai đứng cạnh. Cái hay của bài hát nằm ở chỗ nó không than vãn, cũng không hô hào phải "sống chậm lại" theo kiểu khẩu hiệu — nó chỉ đơn giản đặt lại một nhu cầu rất cơ bản mà người ta hay quên: được thở một cách bình thường, giữa một cuộc sống đang cuốn mình đi.</p>
+  <p>MV phát hành ngày 8/4/2021, nhanh chóng vượt mốc mười triệu lượt xem trên YouTube — một con số hiếm có với một bài hát vốn dĩ chỉ được sinh ra để bán hàng. Nó thành công đến mức năm sau, Panasonic tiếp tục dùng tinh thần "thở" cho chiến dịch kế tiếp, với khẩu hiệu "Cứ Thở Đi". Nhưng phần sống lâu hơn cả hai chiến dịch quảng cáo lại chính là bài hát: người ta vẫn nghe "Thở" không phải vì nhớ đến máy lọc khí, mà vì nó nói đúng cái cảm giác rất quen — làm việc, làm việc, rồi bỗng một ngày thấy mình đang nín thở mà không biết từ bao giờ.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> một bài hát viết theo đơn đặt hàng quảng cáo, cuối cùng lại sống lâu hơn chính chiến dịch đã sinh ra nó.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát mở bằng một ngày đã kín lịch, những việc chưa xong dồn lại, và một người cố nén cảm giác mệt vì ngày mai vẫn còn phải dậy sớm đi làm tiếp. Rồi mạch bài hát chuyển sang nhìn lại: đi được một quãng đường dài, tưởng đã đạt tới thứ mình muốn, nhưng ngoảnh lại mới nhận ra cái giá phải trả.</p>
+  <ul>
+    <li>"Chạm được tới đỉnh cao rồi cô độc" — câu này lật ngược hình ảnh quen thuộc của việc "lên đỉnh". Bình thường đỉnh cao gắn với chiến thắng; ở đây nó gắn với một mình.</li>
+    <li>"Chìm sâu trong guồng quay đầy vội vã" — chữ "guồng quay" quan trọng hơn chữ "vội vã": đó là thứ máy móc tự xoay, người ở trong không còn quyền chọn dừng lại.</li>
+    <li>"Một bầu trời xanh" — sau những hình ảnh nặng phía trên, điều bài hát ước lại đơn giản đến mức gần như buồn cười: chỉ cần được nhìn thấy trời quang, được thở.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://www.nhaccuatui.com/bai-hat/tho-da-lab-ft-juky-san.OrwWnkEXqIpx.html">NhacCuaTui</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>MV "Thở" phát hành ngày 8/4/2021, do Muniz Music phát hành, nhanh chóng vượt mười triệu lượt xem trên YouTube.</li>
+    <li>Bài hát nằm trong chiến dịch "Breathe with Panasonic" của Panasonic Life Solutions Việt Nam; năm 2022 hãng làm tiếp chiến dịch cùng tinh thần với khẩu hiệu "Cứ Thở Đi".</li>
+    <li>Juky San tên thật Trần Thị Dung, sinh năm 1998 tại Thái Bình, được biết đến qua Giọng hát Việt mùa 6 (2019).</li>
+    <li>Da LAB là nhóm nhạc underground Hà Nội, hoạt động từ khoảng năm 2007, trước khi trở thành một trong những cái tên quen thuộc nhất của nhạc trẻ Việt.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://advertisingvietnam.com/tiep-can-bang-cam-xuc-cach-panasonic-viet-nam-chinh-phuc-khach-hang-muc-tieu-qua-chien-dich-cu-tho-di-p20140">Advertising Vietnam — chiến dịch "Cứ Thở Đi"</a> ·
+    <a href="https://419.vn/panasonic-da-lab-tho/4/">419.vn — Sống chậm lại cùng Panasonic và Da LAB qua hit "Thở"</a> ·
+    <a href="https://afamily.vn/da-lab-va-nang-tho-juky-san-tung-hit-moi-nhan-nhu-hanh-phuc-la-thay-ta-tho-hom-nay-20210410142933509.chn">Afamily — Da LAB và Juky San tung hit "Thở"</a> ·
+    <a href="https://thegioinguoinoitieng.com/tieu-su-juky-san/">Thế Giới Người Nổi Tiếng — Tiểu sử Juky San</a>
+  </p>
+</div>
+</body>
+</html>
