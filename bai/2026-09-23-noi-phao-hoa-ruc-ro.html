@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nơi Pháo Hoa Rực Rỡ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>23/09/2026</span><span>Việt Nam · 2024</span><span>Orange, Hoàng Dũng, ft. Cẩm Vân</span></div>
+
+  <h1>Nơi Pháo Hoa Rực Rỡ</h1>
+  <p class="dek">Bài hát sinh ra từ một quảng cáo giày Tết, kết bằng giọng của một người mẹ.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/jEej3CIQh_Q" title="Nơi Pháo Hoa Rực Rỡ — Orange, Hoàng Dũng, ft. Cẩm Vân"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=jEej3CIQh_Q" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc: Hứa Kim Tuyền · Trình bày: Orange, Hoàng Dũng, ft. Cẩm Vân · phát hành 1/1/2024, dự án "Đi Để Trở Về 8" của Biti's Hunter</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Đêm 29 Tết là đêm khó nhất trong năm để ở một mình giữa thành phố. Ai cũng đang thu dọn để về, và người còn nán lại thường mang một lý do không dễ kể ra. Đó là bối cảnh mà ê-kíp dựng nên cho MV <i>Nơi Pháo Hoa Rực Rỡ</i>, ra mắt đúng 21 giờ ngày 1/1/2024: một cô gái lỡ chuyến xe khách cuối cùng vì mải làm việc, một chàng trai vừa cãi nhau với bố mẹ vì chọn ở lại thành phố theo đuổi đam mê thay vì về quê ăn Tết. Hai người lạ, đứng giữa phố, ngay trước lúc pháo hoa giao thừa bắn lên.</p>
+  <p>Bài hát này không sinh ra từ một cảm xúc riêng tư của nhạc sĩ, mà từ một đơn đặt hàng thương mại — bản nhạc mở màn mùa quảng cáo Tết năm thứ 8 của thương hiệu giày thể thao Biti's Hunter, chiến dịch "Đi Để Trở Về". Nghe có vẻ nghịch lý khi một bài hát về sự trở về, về gia đình, lại được viết ra để bán giày. Nhưng "Đi Để Trở Về" không phải một quảng cáo thông thường: từ khi ra mắt cuối năm 2016 với Soobin Hoàng Sơn, chiến dịch đã trở thành một phần lịch nhạc Tết của người Việt, từng kéo doanh số Biti's tăng 250% chỉ sau mùa thứ hai, đứng đầu bảng xếp hạng quảng cáo YouTube hai năm liền 2017–2018. Nó sống được lâu vì mỗi năm chọn kể một câu chuyện thật, không phải khoe sản phẩm.</p>
+  <p>Người viết nhạc năm đó là Hứa Kim Tuyền — nhạc sĩ, nhà sản xuất đứng sau nhiều bản hit của nhạc trẻ Việt Nam gần một thập kỷ qua. Anh kể lại ý tưởng ban đầu bằng một quan sát giản dị: người trẻ khi buồn thường khó chia sẻ với người thân quen, nhưng lại dễ mở lòng với một người lạ. Chính vì vậy, những cuộc gặp gỡ tình cờ của tuổi trẻ — như cuộc gặp giữa hai nhân vật trong MV — có thể trở thành ký ức đẹp, xoa dịu những vết xước trên đường trưởng thành. Ca khúc được giao cho Orange và Hoàng Dũng — hai giọng ca từng song ca bản hit "Ong Bây Bi" nhiều năm trước — như một cuộc tái hợp.</p>
+  <p>Nhưng chi tiết khiến bài hát vượt ra khỏi khuôn khổ một MV quảng cáo Tết thông thường nằm ở đoạn cuối, khi một giọng nữ thứ ba cất lên: danh ca Cẩm Vân. Phần của bà không phải để dạy dỗ hay khuyên nhủ ai — ê-kíp mô tả nó như bóng mát của một vòm cây đã đứng qua nhiều mùa, lặng lẽ ôm lấy những đứa trẻ vừa vấp ngã. Cẩm Vân hát bằng góc nhìn một người mẹ, khép bài hát lại đúng vòng tròn mà cái tên chiến dịch đã gọi từ đầu: đi, để rồi trở về. Một ca khúc bắt đầu bằng hai người trẻ lạc nhau giữa phố đêm cuối năm, kết thúc bằng một người mẹ đang chờ ở nhà.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> một bài hát viết để mở màn mùa quảng cáo giày Tết lại khép lại bằng giọng hát của một người mẹ, đúng vòng tròn mà cái tên chiến dịch gọi từ đầu — đi, để rồi trở về.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài đi theo đúng mạch chuyện của MV. Mở đầu là một người trẻ giữa phố đêm cuối năm, mang một nỗi lòng chưa kịp ngỏ cùng ai. Điệp khúc bung ra thành hình ảnh trung tâm của cả bài — tuổi trẻ được ví như pháo hoa, một khoảnh khắc cháy sáng rực rỡ nhưng rất ngắn. Đoạn cuối hạ giọng và đổi ngôi kể, từ tiếng người trẻ sang tiếng một người mẹ, khép chuyện đi lại bằng chuyện về.</p>
+  <ul>
+    <li>Câu mở điệp khúc — "tuổi thanh xuân sẽ đi qua trong đời" — không hứa hẹn thanh xuân ở lại mãi, mà thừa nhận ngay nó sẽ qua đi.</li>
+    <li>Hình ảnh trung tâm — thanh xuân "tựa pháo hoa bay giữa trời" — chọn đúng thứ ánh sáng đẹp nhất vì ngắn nhất, thừa nhận sự mong manh thay vì né tránh.</li>
+    <li>Câu khép bài do Cẩm Vân hát đổi hẳn ngôi xưng, sang tiếng gọi "con" của một người mẹ đứng chờ — chỉ một chữ đủ lật cả bài hát sang góc nhìn người ở lại.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://www.nhaccuatui.com/bai-hat/noi-phao-hoa-ruc-ro-orange-ft-hoang-dung-the-voice-ft-hua-kim-tuyen-ft-cam-van.IxbrhM3O8li1.html">NhacCuaTui</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>MV ra mắt đúng 21h ngày 1/1/2024, mở màn mùa quảng cáo Tết "Đi Để Trở Về" năm thứ 8 của Biti's Hunter.</li>
+    <li>Orange và Hoàng Dũng từng song ca bản hit "Ong Bây Bi" trước khi tái hợp trong ca khúc này.</li>
+    <li>Nữ diễn viên trong MV, Hoàng Hà, từng ghi dấu qua MV "Chúng ta của 8 năm sau" — một trùng hợp về con số "8 năm" mà vài tờ báo có nhắc tới, dù chưa rõ có phải chủ ý của ê-kíp.</li>
+    <li>Chiến dịch "Đi Để Trở Về" khởi đầu cuối năm 2016 với Soobin Hoàng Sơn, từng kéo doanh số Biti's tăng 250% chỉ sau mùa thứ hai.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://cuoi.tuoitre.vn/orange-va-hoang-dung-cung-ke-chuyen-thanh-xuan-20240102120110828.htm">Tuổi Trẻ — Orange và Hoàng Dũng cùng kể chuyện thanh xuân</a> ·
+    <a href="https://svvn.tienphong.vn/noi-phao-hoa-ruc-ro-loi-nhan-nhu-diu-dang-cho-nhung-tam-hon-thanh-xuan-dang-chenh-venh-post1600932.tpo">Sinh Viên Việt Nam / Tiền Phong — lời nhắn nhủ dịu dàng</a> ·
+    <a href="https://www.brandsvietnam.com/congdong/topic/338104-biti-s-hunter-tai-xuat-voi-series-di-de-tro-ve-8-thanh-xuan-oi-ban-co-on-khong">Brands Vietnam — Biti's Hunter và series "Đi để trở về 8"</a> ·
+    <a href="https://m.nhipcaudautu.vn/kinh-doanh/noi-phao-hoa-ruc-ro-mot-goc-nhin-thu-vi-ve-cau-chuyen-thanh-xuan-tu-bitis-hunter-3356962/">Nhịp Cầu Đầu Tư — một góc nhìn về câu chuyện thanh xuân</a>
+  </p>
+</div>
+</body>
+</html>
