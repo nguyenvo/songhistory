@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>You Raise Me Up</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>24/09/2026</span><span>Na Uy · Ireland · 2002</span><span>Lucy &amp; Martha Thomas</span></div>
+
+  <h1>You Raise Me Up</h1>
+  <p class="dek">Viết trong vài ngày, để hát tại một đám tang. Hai mươi năm sau, hai chị em ở một thị trấn nhỏ nước Anh lại hát nó cho nhau nghe.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/Dwf6STID_po" title="You Raise Me Up — Lucy Thomas ft. Martha Thomas"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=Dwf6STID_po" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc: Rolf Løvland · Lời: Brendan Graham · Trình bày: Lucy Thomas ft. Martha Thomas, album <i>Timeless</i> (2021)</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Đầu năm 2002, nhạc sĩ người Na Uy Rolf Løvland nhận tin mẹ ông qua đời. Ông là một nửa của Secret Garden, song ca hòa tấu Na Uy – Ireland từng thắng Eurovision Song Contest năm 1995 với "Nocturne" — lần duy nhất trong lịch sử cuộc thi một ca khúc gần như không lời lên ngôi. Trước đó, năm 1985, Løvland cũng từng thắng Eurovision một lần, viết cho đoàn Na Uy. Ông không phải người mới.</p>
+  <p>Trong tay Løvland lúc ấy có sẵn một giai điệu, viết từ năm trước, đặt tên tạm "Silent Story". Chỉ có đàn, chưa có lời. Ông muốn hát cho mẹ nghe lần cuối, bằng đúng giai điệu ấy, nhưng một giai điệu câm thì không hát được. Ông gọi cho Brendan Graham — nhà văn kiêm nhạc sĩ người Ireland, tác giả tiểu thuyết <i>The Whitest Flower</i> mà Løvland rất thích — nhờ đặt lời gấp. Graham khi đó cũng không phải tay mơ: ông từng hai lần viết ca khúc đoạt giải Eurovision cho Ireland, năm 1994 và 1996. Hai người từng đoạt giải, giờ ngồi lại vì một đám tang riêng tư.</p>
+  <p>Graham viết trong vài ngày. Lời ông viết không nhắc đến người mẹ nào cụ thể, không nhắc đến cái chết, không nhắc đến Løvland. Nó chỉ nói về một người đang kiệt sức, chờ một ai đó — hoặc một điều gì đó — đến nâng mình dậy, để đứng vững hơn chính mình vẫn thường đứng. Chính vì không gọi tên cụ thể, sau này bài hát hát được cho bất cứ ai: một người mẹ đã khuất, một người tình, một đấng thiêng liêng, hoặc chỉ là ai đó tình cờ có mặt đúng lúc mình gục xuống. Løvland hát bài này, bằng giọng của chính mình, tại đám tang mẹ ông năm đó.</p>
+  <p>Giai điệu của "Silent Story" nghe quen đến kỳ lạ, mượn hơi thở từ "Londonderry Air" — dân ca Ireland hơn trăm tuổi, cũng là nền nhạc của "Danny Boy" nổi tiếng. Løvland luôn nói ông viết độc lập. Nhưng sự giống nhau ấy từng kéo ông ra toà: năm 2018, một nhạc sĩ Iceland kiện, nói giai điệu này trùng với ca khúc ông viết từ 1977. Toà án Mỹ xử năm 2020, phúc thẩm giữ nguyên phán quyết: cả hai bài đều bắt nguồn từ "Danny Boy", một giai điệu đã thuộc về công chúng cả trăm năm, không ai còn giữ bản quyền nó nữa.</p>
+  <p>Bản thu đầu tiên — của Secret Garden cùng ca sĩ Ireland Brian Kennedy, phát hành năm 2002 — không gây tiếng vang gì lớn. Phải đến năm 2003, khi giọng tenor trẻ người Mỹ Josh Groban thu lại cho album <i>Closer</i>, bài hát mới thật sự cất cánh: sáu tuần liền đứng đầu bảng Adult Contemporary của Billboard. Từ đó nó trở thành bài gần như bắt buộc phải có ở đám tang, đám cưới, lễ tốt nghiệp khắp thế giới nói tiếng Anh, được hơn một trăm nghệ sĩ thu âm lại — đến mức phần lớn người hát nó, người nghe nó, chưa từng biết nó từng được viết cho một bà mẹ cụ thể ở Na Uy.</p>
+  <p>Gần hai mươi năm sau, câu chuyện rẽ sang một hướng nhỏ hơn, gần hơn. Ở Wigan, một thị trấn nhỏ miền bắc nước Anh, có hai chị em: Lucy Thomas, sinh năm 2004, từng vào bán kết <i>The Voice Kids</i> Anh năm 14 tuổi; và Martha, em gái, kém chị năm tuổi. Năm 2021, trong album <i>Timeless</i>, Lucy mời Martha hát cùng bản "You Raise Me Up". Không sân khấu lớn, không dàn nhạc, chỉ hai chị em đứng cạnh nhau. Đoạn thu ấy sau này được chia sẻ đi chia sẻ lại rất nhiều, không hẳn vì kỹ thuật thanh nhạc gì đặc biệt, mà vì một điều giản dị: câu hát chủ đề — viết cho một người mẹ đã khuất, hai mươi năm trước — bỗng nghe rất thật khi phát ra từ miệng một người chị đứng ngay cạnh em gái mình, đúng nghĩa đen của việc nâng đỡ nhau lớn lên.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> một bài hát viết trong tang lễ, hoá ra lại sống lâu hơn bất kỳ đám tang nào nó từng dự — không còn thuộc riêng về ai, mà thuộc về bất cứ ai đang cần một bàn tay đỡ mình dậy.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Lời bài hát xoay quanh đúng một động từ: nâng lên. Không tên riêng, không đại từ nào được giải thích cụ thể là ai — điều đó chính là lý do bài hát hát được cho rất nhiều người khác nhau.</p>
+  <ul>
+    <li>Câu hát trong nhan đề cũng là câu được lặp lại nhiều nhất trong bài — gần như một lời cầu nguyện được nhắc đi nhắc lại, hơn là một câu kể chuyện có đầu có cuối.</li>
+    <li>Ở điệp khúc, hình ảnh trung tâm là việc được đứng ở một nơi cao hơn bản thân vẫn có thể tự đứng — như thể sức mạnh không tự có, mà chỉ có được nhờ ai đó đỡ mình lên đúng lúc.</li>
+    <li>Bài hát dùng thì hiện tại xuyên suốt, không phải quá khứ: không phải một kỷ niệm đã khép lại, mà là một trạng thái có thể quay về bất cứ lúc nào cần đến.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://genius.com/Josh-groban-you-raise-me-up-lyrics" target="_blank" rel="noopener">genius.com</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Rolf Løvland viết giai điệu gốc năm 2001, đặt tên tạm "Silent Story", chưa có lời.</li>
+    <li>Løvland từng hai lần thắng Eurovision (1985, và 1995 với "Nocturne"); Brendan Graham cũng từng hai lần thắng Eurovision, viết cho Ireland năm 1994 và 1996.</li>
+    <li>Bản thu đầu tiên do Secret Garden cùng ca sĩ Brian Kennedy thực hiện, năm 2002.</li>
+    <li>Bản Josh Groban (2003, album <i>Closer</i>) đứng sáu tuần liền hạng nhất bảng Adult Contemporary của Billboard.</li>
+    <li>Westlife thu âm lại năm 2005; hiện có tài liệu ghi nhận hơn 100 nghệ sĩ từng thu âm bài này.</li>
+    <li>Lucy Thomas, sinh năm 2004 tại Wigan (Anh), từng vào bán kết <i>The Voice Kids</i> Anh năm 2018; bản song ca với em gái Martha nằm trong album <i>Timeless</i> (2021).</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://en.wikipedia.org/wiki/You_Raise_Me_Up" target="_blank" rel="noopener">Wikipedia — You Raise Me Up</a> ·
+    <a href="https://www.billboard.com/pro/josh-groban-you-raise-me-up-copyright-lawsuit-ruling/" target="_blank" rel="noopener">Billboard — phán quyết vụ kiện bản quyền</a> ·
+    <a href="https://en.wikipedia.org/wiki/Lucy_Thomas_(singer)" target="_blank" rel="noopener">Wikipedia — Lucy Thomas (singer)</a> ·
+    <a href="https://www.greatbritishlife.co.uk/magazines/lancashire/25855259.wigans-lucy-thomas-youtube-west-end/" target="_blank" rel="noopener">Great British Life — Wigan's Lucy Thomas</a>
+  </p>
+</div>
+</body>
+</html>
