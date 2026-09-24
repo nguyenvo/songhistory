@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tiến Hay Lùi</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>24/09/2026</span><span>Việt Nam · 2025</span><span>SOOBIN, Bùi Công Nam</span></div>
+
+  <h1>Tiến Hay Lùi</h1>
+  <p class="dek">Một lời hứa buông ra sau cánh gà show truyền hình, một năm sau thành bài nhạc phim Tết.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/vuOVttSG274" title="Tiến Hay Lùi — SOOBIN, Bùi Công Nam"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=vuOVttSG274" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Sáng tác: Bùi Công Nam, SOOBIN (Nguyễn Huỳnh Sơn), Stilla D · Trình bày: SOOBIN, Bùi Công Nam · OST phim <i>Nụ Hôn Bạc Tỷ</i></p>
+
+  <h2>Câu chuyện</h2>
+  <p>Cuối năm 2024, trong ngôi nhà chung của "Anh Trai Vượt Ngàn Chông Gai", Bùi Công Nam và Tiến Luật cùng ở một đội — "Gia tộc Toàn năng". Suốt mấy tháng ghi hình, thi thố, ăn ngủ chung sóng truyền hình, chàng nhạc sĩ trẻ và người đàn anh diễn viên hài trở nên thân đến mức báo chí gọi thẳng là "anh ruột". Ở đâu đó trong hậu trường một mùa thi dài, có một lời hứa được buông ra, rất Việt Nam, rất tình cảm: đại loại là nếu anh làm phim, em sẽ viết nhạc cho anh.</p>
+  <p>Tiến Luật khi đó đang chuẩn bị cho một phim Tết — không phải phim anh đạo diễn, mà phim của vợ anh, Thu Trang: "Nụ Hôn Bạc Tỷ". Anh đóng vai phụ, mang màu hài hước, còn vợ anh ngồi ghế đạo diễn.</p>
+  <p>Gần một năm sau, lời hứa được giữ đúng. Bùi Công Nam viết bài hát OST, rồi rủ thêm SOOBIN — người không cùng nhà, không cùng chương trình. SOOBIN năm đó đứng ở phía "Anh Trai Say Hi", chương trình vẫn bị so kè, thậm chí xem là đối trọng của "Anh Trai Vượt Ngàn Chông Gai". Nhưng khi được ngỏ lời, SOOBIN nhận ngay, không đắn đo: chỉ cần anh Tiến Luật gọi là có mặt. Đây cũng là lần đầu tiên hai người làm nhạc chung. Người hâm mộ gọi vui họ là "cặp đôi trứng" — biệt danh có từ chương trình truyền hình, giờ được mang nguyên sang sản phẩm âm nhạc đầu tay.</p>
+  <p>Bài hát ra mắt ngày 21/1/2025, đúng dịp cận Tết Ất Tỵ, làm nhạc phim cho "Nụ Hôn Bạc Tỷ". Bộ phim sau đó vượt mốc trăm tỷ doanh thu, đưa Thu Trang trở thành nữ đạo diễn Việt Nam đầu tiên chạm cột mốc này bằng một phim hài Tết.</p>
+  <p>Nhưng "Tiến Hay Lùi" không chỉ là món quà giữ lời hứa giữa những người bạn. Ca khúc tiết tấu vui, dồn dập này được viết đúng vào khoảnh khắc nhân vật Thúy Vân — cô gái bán bánh mì do Hoa hậu Đoàn Thiên Ân thủ vai — đứng giữa một ngã ba tình cảm, không biết nên tiến tới hay lùi lại, giữa hai người đàn ông tên Tú và Quang. Cái tên bài hát, vì vậy, không phải một câu hỏi tu từ chung chung kiểu nhạc phim minh họa, mà là câu hỏi rất cụ thể của một cô gái cụ thể trong phim — được viết bởi một người bạn thân thiết của gia đình đạo diễn, hiểu rõ nhân vật ấy đến mức có thể đặt tên cho nỗi phân vân của cô bằng đúng bốn chữ.</p>
+  <p>Có một chi tiết khiến câu chuyện tròn hơn: người viết nhạc và người hát chính không đứng chung một chương trình truyền hình, không cùng một "gia tộc", nhưng vẫn ngồi lại cùng nhau vì một người thứ ba mà cả hai cùng quý. Tình bạn trong showbiz, đôi khi ồn ào và có phần được dàn dựng cho ống kính; nhưng ở đây, cái kết là một bài hát thật, phát hành thật, được hàng triệu người nghe thật — bằng chứng cụ thể nhất cho một lời hứa từng chỉ nói miệng.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> người viết và người hát chính không hề cùng một "nhà" — họ ngồi lại chỉ vì cùng quý một người bạn.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát có bản quyền nên không trích nguyên lời ở đây. Qua nhiều lần nghe: đoạn đầu là lời tự vấn dồn dập của một cô gái đứng trước quyết định tình cảm chưa ngã ngũ, đúng tâm trạng rối. Điệp khúc lặp lại câu hỏi "tiến hay lùi" — vừa vui tai vừa có chút hoang mang thật. Khi SOOBIN vào ở đoạn sau, giọng trầm và chắc hơn tạo cảm giác như một người đứng cạnh, không trả lời thay cô gái mà chỉ ở đó trong lúc cô tự quyết định.</p>
+  <p class="credit">Đọc trọn lời tại <a href="https://www.nhaccuatui.com/bai-hat/tien-hay-lui-nu-hon-bac-ty-original-soundtrack-bui-cong-nam-ft-soobin.5YGZBYdZMdQN.html">NhacCuaTui</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Sáng tác: Bùi Công Nam, cùng SOOBIN (tên thật Nguyễn Huỳnh Sơn) và Stilla D.</li>
+    <li>Phát hành 21/1/2025, làm OST phim "Nụ Hôn Bạc Tỷ" (đạo diễn Thu Trang, Tiến Luật đóng vai phụ).</li>
+    <li>Biệt danh "cặp đôi trứng" của Bùi Công Nam – SOOBIN bắt nguồn từ mùa thi "Anh Trai Vượt Ngàn Chông Gai" 2024, dù SOOBIN thực tế tham gia chương trình song song "Anh Trai Say Hi".</li>
+    <li>"Nụ Hôn Bạc Tỷ" sau đó vượt mốc doanh thu 100 tỷ đồng, đưa Thu Trang trở thành nữ đạo diễn Việt đầu tiên đạt cột mốc này.</li>
+    <li>Trên Spotify, bài hát có hơn 9,5 triệu lượt nghe.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://hoahoctro.tienphong.vn/soobin-bui-cong-nam-giu-loi-hua-hat-nhac-phim-tet-cho-anh-ruot-tien-luat-post1712789.tpo">Tiền Phong (Hoa Học Trò) — SOOBIN, Bùi Công Nam giữ lời hứa hát nhạc phim Tết</a> ·
+    <a href="https://music.apple.com/vn/song/ti%E1%BA%BFn-hay-l%C3%B9i-n%E1%BB%A5-h%C3%B4n-b%E1%BA%A1c-t%E1%BB%B7-original-soundtrack/1792207416?l=vi">Apple Music — thông tin phát hành</a> ·
+    <a href="https://thanhnien.vn/nu-hon-bac-ty-thu-57-ti-tien-luat-tiet-lo-cat-se-dong-phim-cho-vo-185250204011448886.htm">Thanh Niên — Nụ Hôn Bạc Tỷ thu 57 tỷ</a> ·
+    <a href="https://baomoi.com/nu-hon-bac-ty-cua-dao-dien-thu-trang-vuot-moc-100-ty-c51419874.epi">Báo Mới — Nụ Hôn Bạc Tỷ vượt mốc 100 tỷ</a>
+  </p>
+</div>
+</body>
+</html>
