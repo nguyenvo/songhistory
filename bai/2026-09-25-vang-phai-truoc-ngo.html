@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vàng Phai Trước Ngõ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>25/09/2026</span><span>Việt Nam · nhạc Trịnh Công Sơn</span><span>Lân Nhã</span></div>
+
+  <h1>Vàng Phai Trước Ngõ</h1>
+  <p class="dek">Bài Trịnh hiếm ai hát, được một người từng thắng cuộc thi nhạc Trịnh chọn lại, mười lăm năm sau.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/Kf5689L8pXg" title="Vàng Phai Trước Ngõ — Lân Nhã"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=Kf5689L8pXg" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc &amp; lời: Trịnh Công Sơn · Trình bày: Lân Nhã, album <i>Nhiên</i> (2023)</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Năm 2008, tại vòng chung kết cuộc thi "Giọng hát hay nhạc Trịnh" ở TP.HCM, một chàng trai vừa tạm gác công việc văn phòng bước lên sân khấu hát "Phôi pha" và "Có một ngày như thế". Anh tên Trần Lân Nhã, ngoài hai mươi tuổi, chưa qua trường lớp thanh nhạc nào, chỉ giữ niềm mê hát từ nhỏ phía sau tấm bằng đại học. Đêm đó anh giành giải Nhất. Ban tổ chức, có sự đồng hành của gia đình cố nhạc sĩ Trịnh Công Sơn, nhận ra ở giọng nam trầm ấm này một thứ khác với số đông: không gồng, không cố phô kỹ thuật, chỉ kể chuyện bằng giọng hát, gần như đang ngồi nói chuyện phiếm. Sau giải thưởng ấy, gia đình nhạc sĩ đã tận tình giúp đỡ Lân Nhã quay lại với con đường ca hát.</p>
+  <p>Mười lăm năm sau, năm 2023, Lân Nhã ra album thứ hai, toàn bộ là nhạc Trịnh Công Sơn, đặt tên <i>Nhiên</i>. Nhưng bài được chọn để mở đầu, để làm MV giới thiệu cả album, không phải một bản hit quen thuộc kiểu người mới nghe nhạc Trịnh cũng biết — mà là "Vàng phai trước ngõ", một cái tên hiếm ai nhắc tới giữa kho nhạc đồ sộ (được cho là khoảng 600 ca khúc) của ông. Lân Nhã giải thích lý do chọn, ngắn gọn: đây là một trong số ít bài của nhạc sĩ Trịnh Công Sơn có phần lời rất hay, nhưng rất ít ca sĩ chọn hát.</p>
+  <p>Câu nói đó đáng để dừng lại một chút. "Vàng phai trước ngõ" không thiếu người từng ghi âm. Tuấn Ngọc hát nó năm 1995, trong album <i>Đêm Thấy Ta Là Thác Đổ</i> — tên album cũng lấy từ một câu hát nổi tiếng khác của chính Trịnh Công Sơn, viết năm 1971. Tuấn Ngọc là giọng nam mà Trịnh Công Sơn từng xem là hát nhạc mình thành công nhất, một sự công nhận không phải ai cũng có được từ chính tác giả. Em gái nhạc sĩ, ca sĩ Trịnh Vĩnh Trinh, cũng có bản thu riêng. Vậy mà giữa hàng trăm bài hát mang tên Trịnh Công Sơn được hát lại mỗi ngày ở phòng trà, quán cà phê, sân khấu lớn nhỏ khắp Việt Nam, bài này vẫn nằm ở một góc khuất — không vào danh sách những bài hay được hát lại nhiều nhất, không phải bài người mới nghe nhạc Trịnh sẽ gặp đầu tiên.</p>
+  <p>Có lẽ vì bài hát này khó hát theo đúng nghĩa đen: không có cao trào lớn để bung ra, không có câu điệp khúc dễ nhớ để hát theo. Nó là một bản trầm, gần như thì thầm, đi theo nhịp một người đứng nhìn ánh nắng phai dần trước cổng nhà mình, nhìn một dòng sông ngắn chảy qua bến vắng. Người hát thiếu tiết chế dễ làm bài trôi thành nhạt; người hát quá kỹ thuật dễ làm mất cái mộc vốn có của nó.</p>
+  <p>Đó chính là chỗ giọng Lân Nhã hợp. Anh giới thiệu lại chính mình bằng chất giọng trầm, ấm, hơi khàn, không cố phô diễn — thứ từng giúp anh thắng cuộc thi nhạc Trịnh mười lăm năm trước, và sau này giúp anh được gọi vui là "hoàng tử nhạc tình phòng trà" — bằng đúng bài hát đòi hỏi thứ đó nhất: một bài không cho phép hát lớn tiếng. Trong MV, chỉ có tiếng đàn guitar của Dũng Đà Lạt và tiếng sáo trúc của nghệ sĩ Hoàng Yến đệm theo, không dàn nhạc, không hiệu ứng, gần như tái hiện đúng không khí một phòng trà nhỏ — nơi Lân Nhã đã xây gần như toàn bộ sự nghiệp mình suốt hơn một thập niên qua.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> một người từng được nhạc Trịnh vớt ra khỏi cuộc đời văn phòng, mười lăm năm sau quay lại đúng kho nhạc đó, và chọn hát bài gần như bị bỏ quên — chỉ vì tin nó xứng đáng được nghe.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát dựng một khung cảnh rất hẹp: một người đứng trước ngõ nhà mình, nhìn thứ ánh sáng vàng của một buổi chiều đang nhạt dần trên tà áo lụa, trên một nụ hồng nở hơi quá đà đến mức nghe ra buồn. Ánh sáng ấy không phải mới tàn lần đầu — lời hát gợi ý đây là một sự phai nhạt đã lặp lại nhiều lần, như thể người đứng đó đã quen nhìn nó tàn đi qua nhiều mùa rồi. Sang đoạn sau, khung cảnh mở rộng ra một dòng sông ngắn, một bến vắng, một khu vườn buổi trưa không còn tiếng ru — tất cả đều là hình ảnh của một cái gì đang cạn dần, đang chờ đến hồi kết, đúng chất "vô thường" quen thuộc trong nhạc Trịnh: không có biến cố lớn, chỉ có thời gian trôi qua và mọi thứ nhạt màu theo nó.</p>
+  <ul>
+    <li>Hình ảnh "vàng phai trước ngõ" đặt ngay đầu đề: không chọn một mất mát lớn để mở bài, mà chọn đúng khoảnh khắc một sắc màu quen thuộc nhạt đi trước cửa nhà — nỗi buồn nhỏ nhất, gần nhất, mỗi ngày ai cũng có thể thấy nếu chịu dừng lại nhìn.</li>
+    <li>Ý "đã phai bao độ" biến sự tàn phai từ một biến cố thành một vòng lặp — không phải "mất một lần" mà là thói quen của thời gian, năm nào cũng diễn ra y vậy.</li>
+    <li>Hình ảnh dòng sông "ngắn" chảy ra bến "rộng" tạo một sự lệch cỡ cố ý: cái nhỏ bé, hữu hạn đối diện với cái mênh mông, trống trải — một ẩn dụ rất Trịnh về thân phận con người trước thời gian.</li>
+    <li>Câu kết đoạn nói tới một dòng sông đang chờ ngày "hấp hối" — chữ dùng cho cái chết của con người, ở đây gán cho cảnh vật. Đây là thủ pháp quen thuộc của Trịnh Công Sơn: đặt sự tàn lụi của con người lên cảnh vật, để nỗi buồn không bi lụy mà tĩnh lặng, gần như chấp nhận.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://hopamviet.vn/chord/song/vang-phai-truoc-ngo/W8IUOIUO.html">hopamviet.vn</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>Trịnh Công Sơn (1939–2001) được xem là một trong những nhạc sĩ lớn nhất của tân nhạc Việt Nam, với kho sáng tác ước tính khoảng 600 ca khúc.</li>
+    <li>Bản ghi âm nổi tiếng sớm của "Vàng phai trước ngõ" là của Tuấn Ngọc, năm 1995, trong album <i>Đêm Thấy Ta Là Thác Đổ</i> — tên lấy từ một câu hát khác của Trịnh Công Sơn (1971).</li>
+    <li>Em gái nhạc sĩ, ca sĩ Trịnh Vĩnh Trinh, cũng có bản thu riêng của bài này.</li>
+    <li>Lân Nhã (Trần Lân Nhã, sinh 1986 tại TP.HCM) giành giải Nhất cuộc thi "Giọng hát hay nhạc Trịnh" năm 2008, sau đó lọt Top 4 Vietnam Idol 2010.</li>
+    <li>Album <i>Nhiên</i> (2023) là album nhạc Trịnh Công Sơn thứ hai của Lân Nhã; MV "Vàng phai trước ngõ" mở đầu album, có phần đệm của guitarist Dũng Đà Lạt và nghệ sĩ sáo trúc Hoàng Yến.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://cuoi.tuoitre.vn/lan-nha-thoi-lan-gio-moi-cho-vang-phai-truoc-ngo-cua-co-nhac-si-trinh-cong-son-20231002163949574.htm">Tuổi Trẻ Online — Lân Nhã thổi làn gió mới cho "Vàng phai trước ngõ"</a> ·
+    <a href="https://nhac.vn/bai-hat/vang-phai-truoc-ngo-tuan-ngoc-sorz7mO">Nhac.vn — Vàng Phai Trước Ngõ (Tuấn Ngọc, 1995)</a> ·
+    <a href="https://en.wikipedia.org/wiki/Tr%E1%BB%8Bnh_C%C3%B4ng_S%C6%A1n">Wikipedia (EN) — Trịnh Công Sơn</a> ·
+    <a href="https://vinid.net/blog/tin-tuc-khac/ca-si-lan-nha/">VinID — Tiểu sử và sự nghiệp Lân Nhã</a>
+  </p>
+</div>
+</body>
+</html>
