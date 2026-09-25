@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Từ Giọng Hát Em</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1b1f2a;
+    --ink-soft: #454b5c;
+    --paper: #f2efe8;
+    --paper-raised: #fbfaf7;
+    --rule: #d7d2c6;
+    --brass: #8a6a2f;
+    --plum: #5a3550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e9e5dc;
+      --ink-soft: #a8a394;
+      --paper: #14161d;
+      --paper-raised: #1c1f28;
+      --rule: #333744;
+      --brass: #cfa75a;
+      --plum: #c99cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e9e5dc;
+    --ink-soft: #a8a394;
+    --paper: #14161d;
+    --paper-raised: #1c1f28;
+    --rule: #333744;
+    --brass: #cfa75a;
+    --plum: #c99cbd;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+  .meta {
+    font-family: "Source Serif 4", Georgia, serif;
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .meta span::after { content: "·"; margin-left: 10px; color: var(--rule); }
+  .meta span:last-child::after { content: ""; }
+  h1 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 600; line-height: 1.05;
+    margin: 18px 0 8px; text-wrap: balance;
+  }
+  .dek {
+    font-size: 1.15rem; font-style: italic; color: var(--ink-soft);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%;
+    margin: 0 0 10px; border: 1px solid var(--rule); background: #000;
+  }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .listen {
+    display: inline-block; text-decoration: none; margin-bottom: 8px;
+    background: var(--ink); color: var(--paper);
+    font-family: "Bodoni Moda", Didot, serif; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 2px; letter-spacing: .02em;
+  }
+  .listen:hover { background: var(--plum); }
+  .listen:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .credit { font-size: 13px; color: var(--ink-soft); margin: 10px 0 34px; }
+  h2 {
+    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-size: 1.05rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    margin: 44px 0 4px; padding-top: 18px; border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 18px; }
+  .lyric {
+    display: grid; gap: 6px; margin: 0 0 22px;
+    border-left: 3px solid var(--brass); padding: 4px 0 4px 18px;
+  }
+  .lyric b {
+    font-family: "Bodoni Moda", Didot, serif; font-weight: 400; font-style: italic;
+    font-size: 1.2rem; line-height: 1.5; color: var(--ink);
+  }
+  .lyric i { font-style: normal; color: var(--ink-soft); font-size: .95rem; }
+  .note {
+    background: var(--paper-raised); border: 1px solid var(--rule);
+    padding: 16px 18px; font-size: .95rem; color: var(--ink-soft); margin: 0 0 22px;
+  }
+  .note strong { color: var(--ink); }
+  ul { padding-left: 1.1rem; margin: 0 0 18px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--plum); }
+  .sources { font-size: .9rem; color: var(--ink-soft); }
+  .stamp {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: .85rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="meta"><span>25/09/2026</span><span>Việt Nam / hải ngoại · cuối 1980s</span><span>Ngọc Mai</span></div>
+
+  <h1>Từ Giọng Hát Em</h1>
+  <p class="dek">Một trong bốn bài duy nhất ông viết nhạc trước, lời sau — và bài ông kỹ lưỡng nhất.</p>
+
+  <div class="player">
+    <iframe src="https://www.youtube-nocookie.com/embed/q_pV2e-VAJY" title="Từ Giọng Hát Em — Ngọc Mai"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <a class="listen" href="https://www.youtube.com/watch?v=q_pV2e-VAJY" target="_blank" rel="noopener">▶ Mở trên YouTube</a>
+  <p class="credit">Nhạc &amp; lời: Ngô Thụy Miên · Bản gắn liền lâu năm với Khánh Hà · Bản trên đây: Ngọc Mai, chương trình "O Sen Ngọc Mai – Từ Giọng Hát Em" (Paris By Night, 1/2/2026)</p>
+
+  <h2>Câu chuyện</h2>
+  <p>Ở Orange County, cuối thập niên 1980, có một người đàn ông ngồi hàng giờ trước cây đàn, làm ngược lại thói quen nghề nghiệp cả đời mình. Bình thường ông tìm lời trước — một câu thơ, một hình ảnh — rồi mới phổ nhạc. Nhưng với bài đang viết, ông để giai điệu đi trước, dò từng hợp âm cho tới khi nó tự đứng vững một mình, gần như một khúc aria nhà thờ kiểu Bach, rồi mới ngồi xuống đặt lời sau cùng. Người đó là Ngô Thụy Miên. Bài hát là "Từ giọng hát em". Theo lời chính ông kể lại, đây là một trong chỉ bốn ca khúc suốt sự nghiệp ông viết theo cách đó — nhạc trước, lời sau — cùng với "Mắt biếc", "Dốc mơ" và "Miên khúc". Ông nói đây là bài ông đầu tư nhiều công sức nhất, sửa đi sửa lại từ ý nhạc đến câu chữ, đến khi vừa ý mới thôi.</p>
+  <p>Muốn hiểu vì sao một người vốn viết nhạc theo bản năng lại chọn kỳ công đến vậy cho đúng bài này, phải lùi lại xa hơn, về quãng đời đã đưa ông tới cây đàn đó.</p>
+  <p>Ngô Thụy Miên, tên thật Ngô Quang Bình, thành danh ở Sài Gòn từ trước 1975 với những bản tình ca còn được hát tới hôm nay: "Niệm khúc cuối", "Bản tình cuối", "Mùa thu cho em". Thời sinh viên, ông yêu Đoàn Thanh Vân, con gái nghệ sĩ Đoàn Châu Mậu. Mối tình trục trặc rồi nối lại, và năm 1973 hai người đính hôn, định cưới khi Thanh Vân học xong đại học. Nhưng biến cố 30 tháng 4 năm 1975 ập tới trước khi kịp cưới. Thanh Vân theo gia đình rời Việt Nam, không kịp từ biệt người sắp thành chồng. Ngô Thụy Miên ở lại, rồi vượt biên, tới trại tị nạn Pulau Bidong của Malaysia. Ở đó ông viết "Em còn nhớ mùa xuân", đề tặng riêng Thanh Vân — một bài hát gửi cho người mình không biết bao giờ mới gặp lại. Sáu tháng sau, ông được bảo lãnh sang Montréal, Canada. Cùng năm 1979 ấy, ông và Thanh Vân tìm lại được nhau, chuyển tới San Diego rồi Orange County, và làm đám cưới tại California. "Em về mùa thu" là bài ông viết đánh dấu ngày đoàn tụ đó.</p>
+  <p>Vậy nên khi "Từ giọng hát em" ra đời — một số nguồn ghi khoảng cuối thập niên 1980, dù các bản ghi âm và nền tảng nhạc số sau này lại đưa ra những năm khác nhau, nên mốc thời gian chính xác chưa thể khẳng định chắc — Ngô Thụy Miên đã là một người đàn ông đã cưới được người mình yêu, sau một cuộc chia ly tưởng như vĩnh viễn. Đây không phải một bài hát viết trong đau khổ hay xa cách, như phần lớn gia tài nhạc tình của ông. Nó là một bài hát viết trong hạnh phúc đã có thật, đã ở yên đó nhiều năm — có lẽ vì vậy ông mới cho phép mình chậm rãi, kỹ lưỡng, gần như đang làm lễ, khi viết nó. Ông từng nói tình yêu với ông là điều thiêng liêng, dù sướng hay khổ, và yêu không phải để chiếm hữu mà là cho tận cùng. "Từ giọng hát em" nghe như bài hát ông viết khi triết lý đó không còn là ý niệm nữa, mà đã sống được thành đời thật của mình.</p>
+  <p>Bài hát gắn liền lâu năm với giọng Khánh Hà, một trong những ca sĩ hát nhạc Ngô Thụy Miên thành danh nhất ở hải ngoại. Nhưng gần đây nhất, nó lại được đưa trở lại sân khấu theo một cách khác thường: ngày 1 tháng 2 năm 2026, chương trình Paris By Night tổ chức hẳn một đêm nhạc lấy tên chính bài hát này làm chủ đề — "O Sen Ngọc Mai – Từ Giọng Hát Em" — với Ngọc Mai, người từng quán quân một cuộc thi hát và được khán giả gọi bằng biệt danh "O Sen", hát cùng dàn khách mời gồm Hương Thủy, Nguyên Khang, Trần Thái Hòa, Quang Lê, Thiên Tôn và Quốc Nghiệp. Hiếm bài hát nào được vinh dự trở thành tên gọi của cả một đêm diễn.</p>
+
+  <div class="note"><strong>Điều đáng nhớ:</strong> đây là bài hát Ngô Thụy Miên viết nhạc trước rồi mới đặt lời — một trong chỉ bốn lần ông làm vậy cả sự nghiệp — sau khi đã cưới được người mình yêu, qua một cuộc chia ly tưởng vĩnh viễn vì biến cố 1975.</div>
+
+  <h2>Đọc lời, hiểu ý</h2>
+  <p>Bài hát tả một khoảnh khắc rất nhỏ: một người đang mệt mỏi qua ngày, bỗng nghe giọng hát của người thương, và tiếng hát ấy kéo họ ra khỏi mệt mỏi đó, như một thứ ân sủng bất ngờ.</p>
+  <ul>
+    <li>Đoạn điệp khúc ví tiếng hát như "bài ca thánh" — không phải tình cờ, vì cả bài được viết theo cấu trúc hòa âm kiểu aria nhà thờ. Lời và nhạc cùng nâng một giọng hát rất người lên thành thứ gần như cứu rỗi.</li>
+    <li>Một hình ảnh khác ví tiếng hát như đám mây, "ướt trên bờ môi" — mô-típ mây vốn quen trong nhạc tiền chiến, nhưng ghép với chi tiết vật lý ấy thì thôi mơ hồ, tiếng hát trở thành thứ gần như chạm được.</li>
+    <li>Cả bài không có một câu than vãn hay tiếc nuối nào — hiếm thấy ở nhạc Ngô Thụy Miên, phần lớn vốn viết về chia xa. Đây là bài hát của một người đã qua hết chia xa rồi.</li>
+  </ul>
+  <p class="credit">Bài hát có bản quyền, nên đây chỉ là vài nét tóm lược. Đọc trọn lời tại <a href="https://loibaihat.biz/lyric/hnxge/tugionghatem/">loibaihat.biz</a>.</p>
+
+  <h2>Vài chi tiết</h2>
+  <ul>
+    <li>"Từ giọng hát em" là một trong chỉ bốn ca khúc Ngô Thụy Miên viết nhạc trước, lời sau — cùng "Mắt biếc", "Dốc mơ", "Miên khúc".</li>
+    <li>Ngô Thụy Miên và vợ, Đoàn Thanh Vân, đính hôn năm 1973 tại Sài Gòn, ly tán sau 30/4/1975, đoàn tụ và cưới tại California năm 1979.</li>
+    <li>Trong lúc vẫn sáng tác, ông từng làm việc trong ngành điện toán cho một cơ sở của UCLA tại Olympia, bang Washington.</li>
+    <li>Đêm 1/2/2026, Paris By Night dựng nguyên một chương trình mang tên bài hát này cho Ngọc Mai tại Pechanga Theater, với sự góp giọng của Hương Thủy, Nguyên Khang, Trần Thái Hòa, Quang Lê, Thiên Tôn, Quốc Nghiệp.</li>
+  </ul>
+
+  <h2>Nguồn</h2>
+  <p class="sources">
+    <a href="https://dantri.com.vn/van-hoa/nhac-si-ngo-thuy-mien-he-lo-ve-nguoi-tinh-trong-ban-cac-tinh-ca-20151205175210543.htm">Dân Trí — Ngô Thụy Miên hé lộ về "người tình" trong các bản tình ca</a> ·
+    <a href="https://nhacxua.vn/cuoc-doi-va-su-nghiep-cua-nhac-si-ngo-thuy-mien-mot-doi-sang-tac-tinh-ca/">Nhacxua.vn — Cuộc đời và sự nghiệp Ngô Thụy Miên</a> ·
+    <a href="https://www.crossingstv.com/paris-by-night-concert-pechanga-vn/">Crossings TV — Chương trình "O Sen Ngọc Mai – Từ Giọng Hát Em"</a> ·
+    <a href="https://thuy-nga-paris-by-night.fandom.com/vi/wiki/Ng%E1%BB%8Dc_Mai_-_T%E1%BB%AB_Gi%E1%BB%8Dng_H%C3%A1t_Em">Thúy Nga PBN Wiki — Ngọc Mai: Từ Giọng Hát Em</a>
+  </p>
+</div>
+</body>
+</html>
